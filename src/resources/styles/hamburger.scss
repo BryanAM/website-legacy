@@ -1,0 +1,25 @@
+.hamburger-menu {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+.close {
+  animation: hideshow 1s ease reverse;
+  animation-fill-mode: forwards; 
+}
+.top-bar, .bottom-bar {
+  animation: hideshow 1s ease;
+  animation-fill-mode: forwards;  
+}
+
+@keyframes hideshow {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+} 
+
