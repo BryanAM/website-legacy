@@ -1,6 +1,6 @@
 import React from 'react';
-import Hamburger from './Hamburger';
-import '../resources/styles/nav.scss';
+import Hamburger from '../Hamburger/Hamburger';
+import '../../resources/styles/nav.scss';
 
 const Nav = () => {
   const handleOnClick = () => {

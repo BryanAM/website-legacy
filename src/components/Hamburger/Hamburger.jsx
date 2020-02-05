@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../resources/styles/hamburger.scss';
+import '../../resources/styles/hamburger.scss';
 
 const Hamburger = () => {
 
