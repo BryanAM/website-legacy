@@ -1,6 +1,9 @@
+html {
+  max-height: 100vh;;
+}
 body {
   margin: 0;
-  background-color: #0c0031;
+  background-color: #182952;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

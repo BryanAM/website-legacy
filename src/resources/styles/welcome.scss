@@ -3,16 +3,18 @@
 
 .about-container {
   margin: 2rem;
+  min-height: calc(100vh - 11rem);
 }
 
 h1 { 
-  color: $accent-yellow; 
+  color: $accent-pink; 
   font-size: $small;
 }
+
 .me-name {
-  color: $white;
-  font-size: $x-large;
-  margin-top: 10;
+  color: $light-text;
+  font-size: $large;
+  margin-top: 0;
   margin-bottom: 0;
   font-weight: $x-bold;
 }
@@ -22,11 +24,11 @@ h1 {
   font-size: $large;
   margin-top: 0;
   font-weight: $x-bold;
-  color: $text-blue;
+  color: $standard-text;
 }
 
 .me-long {
   color: $white;
   font-size: $medium;
-  color: $text-blue;
+  color: $standard-text;
 }
