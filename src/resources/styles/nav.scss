@@ -1,10 +1,19 @@
+@import "./colorsDark.scss";
+@import "./text.scss";
 nav {
   min-height: 5rem;
-  background-color: #110044;
+  background-color: $nav-blue;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .hamburger {
+  margin: 2rem;
+}
+
+.fa-envelope {
+  color: $accent-yellow;
+  font-size: $large;
+  margin: 2rem;
 }

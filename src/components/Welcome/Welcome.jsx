@@ -9,6 +9,7 @@ const Welcome = () => {
       <h1>{t('welcome.greeting')}</h1>
       <p className="me-name">{t('welcome.name')}</p>
       <p className="me-short">{t('welcome.about')}</p>
+      <p className="me-long">{t('welcome.detail')}</p>
     </section>
   );
 

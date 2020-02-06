@@ -1,9 +1,10 @@
 {
   "en": {
     "welcome": {
+      "about": "From the foot of Mt. Fuji, to the USA",
+      "detail": "I'm a Philadelphia based software engineer. I got my start just outside of Tokyo and transitioned to software engineering. Come learn about my journey!",
       "greeting": "Welcome! My name is",
-      "name": "Bryan Aument",
-      "about": "I build Font-End web apps."
+      "name": "Bryan Aument."
     }
   }
 }

@@ -1,21 +1,32 @@
+@import "./colorsDark.scss";
+@import "./text.scss";
+
 .about-container {
-  min-height: 100vh;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 h1 { 
-  color: white; 
-  font-size: small;
+  color: $accent-yellow; 
+  font-size: $small;
 }
 .me-name {
-  color: white;
-  font-size: xx-large;
-  margin: 0;
-
+  color: $white;
+  font-size: $x-large;
+  margin-top: 10;
+  margin-bottom: 0;
+  font-weight: $x-bold;
 }
 
 .me-short {
-  color: white;
-  font-size: xx-large;
-  margin: 0;
+  color: $white;
+  font-size: $large;
+  margin-top: 0;
+  font-weight: $x-bold;
+  color: $text-blue;
+}
+
+.me-long {
+  color: $white;
+  font-size: $medium;
+  color: $text-blue;
 }
