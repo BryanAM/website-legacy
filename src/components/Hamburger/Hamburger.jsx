@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../resources/styles/hamburger.scss';
+import './hamburger.scss';
 const Hamburger = () => {
 
   const [open, setOpen] = useState(false);

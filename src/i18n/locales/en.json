@@ -5,6 +5,11 @@
       "detail": "I'm a Philadelphia based software engineer. I got my start just outside of Tokyo and transitioned to software engineering. Come learn about my journey!",
       "greeting": "Welcome! My name is",
       "name": "Bryan Aument."
+    },
+    "about": {
+      "header": "A bit about me.",
+      "school": "I started out 6,700 miles across the globe in education. I participated in the Japan Exchange and Teaching program (JET) for 3 years in Yamanashi Prefecture.",
+      "tech": "Before Japan I studied international relations and Japanese at The Pennsylvania State University. After returning from Japan I studied computer science at the Millersville University."
     }
   }
 }

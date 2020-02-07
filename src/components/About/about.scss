@@ -1,0 +1,31 @@
+@import "../../resources/styles/colorsDark.scss";
+@import "../../resources/styles/text.scss";
+
+.about {
+  display: flexbox;
+  margin: 2rem;
+  min-height: 100vh;
+}
+
+.about-header {
+  color: $accent-pink;
+  font-size: $medium;
+  padding-top: 2rem;
+}
+
+.about-tech, .about-school {
+  color: $standard-text;
+  font-size: $small;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 10px #0f1a34;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 10px 10px #0f1a34;
+  }
+}

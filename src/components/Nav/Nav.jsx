@@ -1,6 +1,6 @@
 import React from 'react';
 import Hamburger from '../Hamburger/Hamburger';
-import '../../resources/styles/nav.scss';
+import './nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 

@@ -8,7 +8,7 @@ const options = {
   },
 
   debug: true,
-  lng: 'en', 
+  lng: 'en',
 
   resources: {
     en: {

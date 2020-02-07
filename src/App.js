@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './components/About/About.jsx';
 import Nav from './components/Nav/Nav.jsx';
 import Welcome from './components/Welcome/Welcome.jsx';
 import i18n from './i18n';
@@ -11,6 +12,7 @@ function App() {
       <I18nextProvider i18n={i18n}>
         <Nav />
         <Welcome />
+        <About />
       </I18nextProvider>
     </div>
   );
