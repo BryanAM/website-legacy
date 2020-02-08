@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './hamburger.scss';
-const Hamburger = () => {
 
+const Hamburger = () => {
   const [open, setOpen] = useState(false);
 
   const handleOnClick = () => {

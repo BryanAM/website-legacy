@@ -1,19 +1,20 @@
-@import "../../resources/styles/colorsDark.scss";
-@import "../../resources/styles/text.scss";
-nav {
-  min-height: 5rem;
-  background-color: $nav-blue;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@import '../../resources/styles/colorsDark.scss';
+@import '../../resources/styles/text.scss';
+
+.fa-envelope {
+  color: $accent-pink;
+  font-size: $large;
+  margin: 2rem;
 }
 
 .hamburger {
   margin: 2rem;
 }
 
-.fa-envelope {
-  color: $accent-pink;
-  font-size: $large;
-  margin: 2rem;
+nav {
+  min-height: 5rem;
+  background-color: $nav-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

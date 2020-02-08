@@ -1,0 +1,19 @@
+@import './colorsDark.scss';
+@import './colorsLight.scss';
+@import './text.scss';
+
+.App {
+  min-height: 100vh;
+}
+
+.section {
+  display: flexbox;
+  margin: 2rem;
+  min-height: 100vh;
+}
+
+.section-header {
+  color: $accent-pink;
+  font-size: $small;
+  padding-top: 2rem;
+}

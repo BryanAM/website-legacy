@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="nav">
+    <nav id="nav-section" className="nav">
       <div className="hamburger"><Hamburger /></div>
       <a href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!"><FontAwesomeIcon icon={faEnvelope} /></a>
     </nav>

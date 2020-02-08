@@ -1,14 +1,10 @@
-@import "../../resources/styles/colorsDark.scss";
-@import "../../resources/styles/text.scss";
+@import '../../resources/styles/colorsDark.scss';
+@import '../../resources/styles/text.scss';
 
-.about-container {
-  margin: 2rem;
-  min-height: calc(100vh - 11rem);
-}
-
-h1 { 
-  color: $accent-pink; 
-  font-size: $small;
+.me-long {
+  color: $white;
+  font-size: $medium;
+  color: $standard-text;
 }
 
 .me-name {
@@ -27,8 +23,3 @@ h1 {
   color: $standard-text;
 }
 
-.me-long {
-  color: $white;
-  font-size: $medium;
-  color: $standard-text;
-}

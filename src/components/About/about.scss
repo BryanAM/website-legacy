@@ -1,17 +1,5 @@
-@import "../../resources/styles/colorsDark.scss";
-@import "../../resources/styles/text.scss";
-
-.about {
-  display: flexbox;
-  margin: 2rem;
-  min-height: 100vh;
-}
-
-.about-header {
-  color: $accent-pink;
-  font-size: $medium;
-  padding-top: 2rem;
-}
+@import '../../resources/styles/colorsDark.scss';
+@import '../../resources/styles/text.scss';
 
 .about-tech, .about-school {
   color: $standard-text;
