@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './workTile.scss';
 
-const WorkTile = ({ children }) => {
+const WorkTile = ({children, title}) => {
   const [t] = useTranslation();
-  const { title } = this.props;
   return(
-    <div className="work-tile">
+    <button className="work-tile">
       <p className="worktile-title">{title}</p>
+      <hr />
       {children}
-    </div>
+    </button>
   );
 
 };

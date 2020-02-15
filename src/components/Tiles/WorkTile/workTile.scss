@@ -1,0 +1,23 @@
+@import '../../../resources/styles/colorsDark.scss';
+
+.work-tile {
+  display: inline-block;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0.25rem;
+  text-decoration: none;
+  background: $nav-blue;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.worktile-title{
+  margin: 0;
+  color: $standard-text;
+  top: 0;
+}
