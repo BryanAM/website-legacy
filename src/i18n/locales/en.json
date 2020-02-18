@@ -6,21 +6,27 @@
       "tech": "Before Japan I studied international relations and Japanese at The Pennsylvania State University. After returning from Japan I studied computer science at the Millersville University."
     },
     "jobs": {
-      "Apple": {
+      "apple": {
+        "dates": "sdsd",
+        "description": "121",
+        "icon": "dd",
+        "name": "Apple",
+        "points": "aaass",
+        "title": "23"
+      },
+      "ey": {
         "dates": "",
         "description": "",
+        "icon": "",
+        "name": "EY",
         "points": "",
         "title": ""
       },
-      "EY": {
+      "jet": {
         "dates": "",
         "description": "",
-        "points": "",
-        "title": ""
-      },
-      "JET": {
-        "dates": "",
-        "description": "",
+        "icon": "",
+        "name": "JET",
         "points": "",
         "title": ""
       }   
