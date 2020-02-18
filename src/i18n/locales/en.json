@@ -10,7 +10,6 @@
         "dates": "sdsd",
         "description": "121",
         "icon": "faAppleAlt",
-        "name": "Apple",
         "points": "aaass",
         "title": "23"
       },
@@ -18,7 +17,6 @@
         "dates": "",
         "description": "",
         "icon": "faCode",
-        "name": "EY",
         "points": "",
         "title": ""
       },
@@ -26,10 +24,16 @@
         "dates": "",
         "description": "",
         "icon": "faSchool",
-        "name": "JET",
         "points": "",
         "title": ""
-      }   
+      } ,
+      "NG": {
+        "dates": "",
+        "description": "",
+        "icon": "faCode",
+        "points": "",
+        "title": ""
+      } 
     },
     "welcome": {
       "about": "From the foot of Mt. Fuji, to the USA",

@@ -4,11 +4,13 @@ import { useTranslation } from 'react-i18next';
 
 import './workTile.scss';
 
-const WorkTile = ({children, title}) => {
+const WorkTile = ({children, clickable, title}) => {
   const [t] = useTranslation();
-  
+  const handleOnClick = () => {
+    clickable(title);
+  }
   return(
-    <button className="work-tile">
+    <button className="work-tile" onClick={handleOnClick}>
       <p className="worktile-title">{title}</p>
       <hr />
       {children}

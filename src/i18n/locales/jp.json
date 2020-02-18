@@ -6,30 +6,34 @@
       "tech": "日本に行く前にペンシルバニア州立大学で日本語と国際政治学を勉強しまた。日本から帰国した後にミラーズビル州立大学でコンピューターサイエンスを勉強しました。"
     },
     "jobs": {
-      "apple": {
+      "Apple": {
         "dates": "",
         "description": "",
         "icon": "faAppleAlt",
-        "name": "Apple",
         "points": "",
         "title": ""
       },
-      "ey": {
+      "EY": {
         "dates": "",
         "description": "",
         "icon": "faCode",
-        "name": "EY",
         "points": "",
         "title": ""
       },
-      "jet": {
+      "JET": {
         "dates": "",
         "description": "",
         "icon": "faSchool",
-        "name": "JET",
         "points": "",
         "title": ""
-      }
+      },
+      "NG": {
+        "dates": "",
+        "description": "",
+        "icon": "faCode",
+        "points": "",
+        "title": ""
+      } 
     },
     "welcome": {
       "about": "山梨県の教室からアメリカの企業まで",
