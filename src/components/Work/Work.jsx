@@ -7,19 +7,20 @@ import { faAppleAlt, faCode, faSchool } from '@fortawesome/free-solid-svg-icons'
 import en from '../../i18n/locales/en.json';
 const Work = () => {
   const [t] = useTranslation();
-
+  const icons = {
+    "faAppleAlt": faAppleAlt,
+    "faCode": faCode,
+    "faSchool": faSchool
+  }
+  
   return(
     <section id="work-section" className="section">
 　　　　<h2 className="section-header">{t('work.header')}</h2>
       {/* Map through jobs */}
       <div className="current-jobs">
-      {
-        console.log(en["en"]["jobs"])
-      }
-        <WorkTile title="Apple" ><FontAwesomeIcon icon={faAppleAlt} /></WorkTile>
-        <WorkTile title="EY" ><FontAwesomeIcon icon={faCode} /></WorkTile>
-        <WorkTile title="JET" ><FontAwesomeIcon icon={faSchool} /></WorkTile>
-        <WorkTile title="NG" ><FontAwesomeIcon icon={faCode} /></WorkTile>
+        {Object.keys(en.en.jobs).map((value, index) => (
+          <WorkTile key={index + "value"} title={value} ><FontAwesomeIcon icon={icons[t('jobs.' + value + ".icon")]} /></WorkTile>
+        ))}
       </div>
       <hr />
       {/* Display Work Data */}

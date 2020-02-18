@@ -6,6 +6,7 @@ import './workTile.scss';
 
 const WorkTile = ({children, title}) => {
   const [t] = useTranslation();
+  
   return(
     <button className="work-tile">
       <p className="worktile-title">{title}</p>
@@ -17,7 +18,6 @@ const WorkTile = ({children, title}) => {
 };
 
 WorkTile.propTypes = {
-  icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 };
 

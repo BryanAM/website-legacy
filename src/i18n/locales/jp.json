@@ -9,7 +9,7 @@
       "apple": {
         "dates": "",
         "description": "",
-        "icon": "",
+        "icon": "faAppleAlt",
         "name": "Apple",
         "points": "",
         "title": ""
@@ -17,7 +17,7 @@
       "ey": {
         "dates": "",
         "description": "",
-        "icon": "",
+        "icon": "faCode",
         "name": "EY",
         "points": "",
         "title": ""
@@ -25,7 +25,7 @@
       "jet": {
         "dates": "",
         "description": "",
-        "icon": "",
+        "icon": "faSchool",
         "name": "JET",
         "points": "",
         "title": ""
