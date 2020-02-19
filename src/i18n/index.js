@@ -4,11 +4,11 @@ import { jp, en } from './locales/index';
 
 const options = {
   interpolation: {
-    escapeValue: false
+    escapeValue: false,
   },
 
   debug: true,
-  lng: 'en',
+  lng: 'jp',
 
   resources: {
     en: {
@@ -28,7 +28,7 @@ const options = {
     wait: false,
     bindI18n: 'languageChanged loaded',
     bindStore: 'added removed',
-    nsMode: 'default'
+    nsMode: 'default',
   },
 };
 

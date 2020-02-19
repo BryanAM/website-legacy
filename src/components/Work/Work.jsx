@@ -29,7 +29,17 @@ const Work = () => {
       </div>
       <hr />
       {/* Display Work Data */}
-      <p style={{color: "white"}}>{job}</p>
+      <h2 className="company-name">{job}</h2>
+      <p className="position-title">{t('jobs.' + job + '.title')}</p>
+      <p className="job-dates">{t('jobs.' + job + '.dates')}</p>
+      <p className="job-description">{t('jobs.' + job + '.description')}</p>
+        <ul>
+      {
+        t('jobs.' + job + '.points', { returnObjects: true }).map((i)=>(
+          <li>{i}</li>
+        ))
+      }
+          </ul>
 
     </section>
   );
