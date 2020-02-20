@@ -28,18 +28,19 @@ const Work = () => {
         ))}
       </div>
       <hr />
-      {/* Display Work Data */}
+      {/* Display job data */}
       <h2 className="company-name">{job}</h2>
       <p className="position-title">{t('jobs.' + job + '.title')}</p>
       <p className="job-dates">{t('jobs.' + job + '.dates')}</p>
       <p className="job-description">{t('jobs.' + job + '.description')}</p>
-        <ul>
-      {
-        t('jobs.' + job + '.points', { returnObjects: true }).map((i)=>(
-          <li>{i}</li>
-        ))
-      }
-          </ul>
+        {/* Iterate through job points */}
+        <ul className="job-points">
+          {
+            t('jobs.' + job + '.points', { returnObjects: true }).map((point)=>(
+              <li key={ point + job }>{point}</li>
+            ))
+          }
+        </ul>
 
     </section>
   );

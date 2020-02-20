@@ -1,5 +1,24 @@
+@import '../../resources/styles/text.scss';
+@import '../../resources/styles/colors.scss';
+
 .current-jobs {
   display: block;
-  text-align: center;
-  
+  text-align: center; 
 }
+
+.company-name {
+  color: $light-text;
+  font-size: $xx-large;
+  margin-bottom: 0;
+}
+
+.job-dates, .position-title {
+  color: $light-text;
+  margin: 0;
+}
+
+.job-description, .job-points {
+  color: $light-text;
+  font-size: $medium;
+}
+
