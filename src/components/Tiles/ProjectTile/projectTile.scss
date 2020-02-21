@@ -1,0 +1,10 @@
+@import '../../../resources/styles/colors.scss';
+
+.project-tile {
+  background-color: $nav-blue;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0;
+  height: 25rem;
+  width: 25rem;
+}
