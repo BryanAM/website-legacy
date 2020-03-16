@@ -1,9 +1,9 @@
 import React from 'react';
 import './projectTile.scss';
 
-const ProjectTile = () => {
+const ProjectTile = (link) => {
   return(
-    <a href="/" className="project-tile">
+    <a href={link} className='project-tile'>
     </a>
   ); 
 };

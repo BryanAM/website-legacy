@@ -3,6 +3,7 @@ import ProjectTile from '../Tiles/ProjectTile/ProjectTile';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import { REPO_QUERY } from './query.js';
+import './projects.scss';
 
 const Projects = () => {
   const [gitHubData, setGitHubData] = useState([]);
@@ -21,8 +22,9 @@ const Projects = () => {
     axiosGitHubGraphQL
     .post('',{ query: REPO_QUERY })
     .then(result => {
-      setGitHubData(result.data.data.user.repositories.edges)
+      setGitHubData([...result.data.data.user.repositories.edges])
     });
+    console.log("state:", gitHubData);
   };
 
   useEffect(getRepoInfo, []);
@@ -31,7 +33,7 @@ const Projects = () => {
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
       {gitHubData.map((gitHubData) => 
-        <ProjectTile />
+        <ProjectTile link={gitHubData.node.url}/>
       )}
     </section>
   );
