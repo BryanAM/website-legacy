@@ -22,9 +22,8 @@ const Projects = () => {
     axiosGitHubGraphQL
     .post('',{ query: REPO_QUERY })
     .then(result => {
-      setGitHubData([...result.data.data.user.repositories.edges])
+      setGitHubData(result.data.data.user.repositories.edges)
     });
-    console.log("state:", gitHubData);
   };
 
   useEffect(getRepoInfo, []);
@@ -33,7 +32,7 @@ const Projects = () => {
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
       {gitHubData.map((gitHubData) => 
-        <ProjectTile link={gitHubData.node.url}/>
+        <ProjectTile link={gitHubData.node.description}/>
       )}
     </section>
   );
