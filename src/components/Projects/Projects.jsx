@@ -23,7 +23,7 @@ const Projects = () => {
     .post('',{ query: REPO_QUERY })
     .then(result => {
       setGitHubData(result.data.data.user.repositories.edges)
-    });
+    })
   };
 
   useEffect(getRepoInfo, []);
@@ -31,8 +31,8 @@ const Projects = () => {
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      {gitHubData.map((gitHubData) => 
-        <ProjectTile link={gitHubData.node.description}/>
+      {gitHubData.map((gitHubData, keyID) => 
+        <ProjectTile key={keyID} link={gitHubData.node.description}/>
       )}
     </section>
   );
