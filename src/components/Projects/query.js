@@ -1,7 +1,23 @@
-export const TEST = `{
-  organization(login: "the-road-to-learn-react") {
-      name
-      url
-
+export const REPO_QUERY = `
+query { 
+  user(login: "BryanAM"){
+    repositories(orderBy: {direction: DESC field: CREATED_AT} first: 3 privacy: PUBLIC){
+      edges {
+        node {
+          url
+        	description
+          repositoryTopics(first: 3){
+            edges{
+              node{
+                topic{
+                  name
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-}`
+`;

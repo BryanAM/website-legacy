@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import ProjectTile from '../Tiles/ProjectTile/ProjectTile';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
+import { REPO_QUERY } from './query.js';
 
 const Projects = () => {
-  const [gitHubData, setGitHubData] = useState({});
+  const [gitHubData, setGitHubData] = useState([]);
   const [t] = useTranslation();
   const axiosGitHubGraphQL = axios.create({
     baseURL: 'https://api.github.com/graphql',
@@ -15,15 +16,23 @@ const Projects = () => {
     }
   });
 
-  // API Call to get current repo info
-  useEffect(() => {
-    
-  });
+  // Axios call to github v4 api
+    const getRepoInfo = () => {
+    axiosGitHubGraphQL
+    .post('',{ query: REPO_QUERY })
+    .then(result => {
+      setGitHubData(result.data.data.user.repositories.edges)
+    });
+  };
+
+  useEffect(getRepoInfo, []);
 
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      <ProjectTile />
+      {gitHubData.map((gitHubData) => 
+        <ProjectTile />
+      )}
     </section>
   );
 };
