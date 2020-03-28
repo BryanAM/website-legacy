@@ -22,7 +22,9 @@ const Projects = () => {
     axiosGitHubGraphQL
     .post('',{ query: REPO_QUERY })
     .then(result => {
-      setGitHubData(result.data.data.user.repositories.edges)
+      setGitHubData(gitHubData => {result.data.data.user.repositories.edges.map(item => {return gitHubData.push(item)})})
+      console.log('api results: ', result.data.data.user.repositories.edges)
+      console.log('resulting state', gitHubData[0].node.url)
     })
   };
 
@@ -31,9 +33,11 @@ const Projects = () => {
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      {gitHubData.map((gitHubData, keyID) => 
-        <ProjectTile key={keyID} link={gitHubData.node.description}/>
-      )}
+      {/* 
+      HERE gitHubData is undefined and breaks the code, but above in my getRepoInfo call I accessed the set state and it logs
+      {gitHubData.map((data, keyID) => 
+        <ProjectTile key={keyID} link={data.node.url}/>
+      )} */}
     </section>
   );
 };
