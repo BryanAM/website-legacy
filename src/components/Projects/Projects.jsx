@@ -19,21 +19,34 @@ const Projects = () => {
 
   // Axios call to github v4 api
     const getRepoInfo = () => {
-    axiosGitHubGraphQL
-    .post('',{ query: REPO_QUERY })
-    .then(result => {
-      setGitHubData(result.data.data.user.repositories.edges)
-    })
+    return ;
+      //console.log('api results: ', result.data.data.user.repositories.edges)
+      //console.log('resulting state', gitHubData[0].node.url)
   };
 
-  useEffect(getRepoInfo, []);
+  useEffect(()=> {
+    const fetchData = async () => {
+      const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
+      setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
+      //setGitHubData(prevState => [prevState, "Banana"]);
+      //console.log("this is data", result.data.data.user.repositories.edges);
+    }
+    fetchData();
+    
+  }, []);
+
+  // logging that the data was loaded or updated
+  useEffect(() => console.log("new data to be loaded", gitHubData), [gitHubData]);
+
 
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      {gitHubData.map((gitHubData, keyID) => 
-        <ProjectTile key={keyID} link={gitHubData.node.description}/>
+      { gitHubData.map((data, keyID) => 
+        //console.log("here is our happy data", data.node.url)
+        <ProjectTile key={keyID} link={data.node.url}/>
       )}
+
     </section>
   );
 };

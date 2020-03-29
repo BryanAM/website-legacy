@@ -1,9 +1,9 @@
 import React from 'react';
 import './projectTile.scss';
 
-const ProjectTile = (link) => {
+const ProjectTile = (props) => {
   return(
-    <a href={link} className='project-tile'>
+    <a href={props.link} target="_blank" rel="noopener noreferrer" className='project-tile'>
     </a>
   ); 
 };
