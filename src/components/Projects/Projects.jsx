@@ -19,25 +19,27 @@ const Projects = () => {
 
   // Axios call to github v4 api
     const getRepoInfo = () => {
-    axiosGitHubGraphQL
-    .post('',{ query: REPO_QUERY })
-    .then(result => {
-      setGitHubData(gitHubData => {result.data.data.user.repositories.edges.map(item => {return gitHubData.push(item)})})
-      console.log('api results: ', result.data.data.user.repositories.edges)
-      console.log('resulting state', gitHubData[0].node.url)
-    })
+    return axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
+      //console.log('api results: ', result.data.data.user.repositories.edges)
+      //console.log('resulting state', gitHubData[0].node.url)
+    
+
   };
 
-  useEffect(getRepoInfo, []);
+  useEffect(()=> {
+    const fetchData = async () => {
+      const data = await getRepoInfo();
+      return data;
+    }
+    fetchData().then(result => {setGitHubData(result.data.data.user.repositories.edges)});
+  }, []);
 
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      {/* 
-      HERE gitHubData is undefined and breaks the code, but above in my getRepoInfo call I accessed the set state and it logs
-      {gitHubData.map((data, keyID) => 
+      {/* { gitHubData && (gitHubData.map((data, keyID) => 
         <ProjectTile key={keyID} link={data.node.url}/>
-      )} */}
+      ))} */}
     </section>
   );
 };
