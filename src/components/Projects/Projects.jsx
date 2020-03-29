@@ -43,7 +43,8 @@ const Projects = () => {
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
       { gitHubData.map((data, keyID) => 
-        console.log(data.node.url)
+        //console.log("here is our happy data", data.node.url)
+        <ProjectTile key={keyID} link={data.node.url}/>
       )}
 
     </section>
