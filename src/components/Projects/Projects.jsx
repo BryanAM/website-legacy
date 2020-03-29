@@ -8,6 +8,7 @@ import './projects.scss';
 const Projects = () => {
   const [gitHubData, setGitHubData] = useState([]);
   const [t] = useTranslation();
+
   const axiosGitHubGraphQL = axios.create({
     baseURL: 'https://api.github.com/graphql',
     headers: {
@@ -17,19 +18,10 @@ const Projects = () => {
     }
   });
 
-  // Axios call to github v4 api
-    const getRepoInfo = () => {
-    return ;
-      //console.log('api results: ', result.data.data.user.repositories.edges)
-      //console.log('resulting state', gitHubData[0].node.url)
-  };
-
   useEffect(()=> {
     const fetchData = async () => {
       const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
       setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
-      //setGitHubData(prevState => [prevState, "Banana"]);
-      //console.log("this is data", result.data.data.user.repositories.edges);
     }
     fetchData();
     
@@ -38,12 +30,10 @@ const Projects = () => {
   // logging that the data was loaded or updated
   useEffect(() => console.log("new data to be loaded", gitHubData), [gitHubData]);
 
-
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
       { gitHubData.map((data, keyID) => 
-        //console.log("here is our happy data", data.node.url)
         <ProjectTile key={keyID} link={data.node.url}/>
       )}
 
