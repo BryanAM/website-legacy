@@ -23,8 +23,7 @@ const Projects = () => {
       const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
       setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
     }
-    fetchData();
-    
+    fetchData(); 
   }, []);
 
   // logging that the data was loaded or updated
