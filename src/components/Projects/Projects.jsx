@@ -19,27 +19,33 @@ const Projects = () => {
 
   // Axios call to github v4 api
     const getRepoInfo = () => {
-    return axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
+    return ;
       //console.log('api results: ', result.data.data.user.repositories.edges)
       //console.log('resulting state', gitHubData[0].node.url)
-    
-
   };
 
   useEffect(()=> {
     const fetchData = async () => {
-      const data = await getRepoInfo();
-      return data;
+      const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
+      setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
+      //setGitHubData(prevState => [prevState, "Banana"]);
+      //console.log("this is data", result.data.data.user.repositories.edges);
     }
-    fetchData().then(result => {setGitHubData(result.data.data.user.repositories.edges)});
+    fetchData();
+    
   }, []);
+
+  // logging that the data was loaded or updated
+  useEffect(() => console.log("new data to be loaded", gitHubData), [gitHubData]);
+
 
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      {/* { gitHubData && (gitHubData.map((data, keyID) => 
-        <ProjectTile key={keyID} link={data.node.url}/>
-      ))} */}
+      { gitHubData.map((data, keyID) => 
+        console.log(data.node.url)
+      )}
+
     </section>
   );
 };
