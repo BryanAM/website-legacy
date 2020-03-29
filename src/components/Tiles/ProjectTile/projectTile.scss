@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   opacity: 0.2;
   border-radius: inherit;
+  transition: all .3s ease-in-out;
   height: 100%;
   width: 100%;
 }
@@ -18,5 +19,11 @@
   margin: 1rem;
   height: 20rem;
   width: 20rem;
+  overflow: hidden;
+    :hover,
+    :focus {
+      transform: scale(1.25);
+      opacity: 0.1;
+    }
 }
 
