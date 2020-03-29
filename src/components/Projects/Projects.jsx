@@ -18,6 +18,7 @@ const Projects = () => {
     }
   });
 
+  // initial fetch for jobs data
   useEffect(()=> {
     const fetchData = async () => {
       const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
