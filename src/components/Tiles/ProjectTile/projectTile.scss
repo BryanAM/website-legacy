@@ -1,5 +1,16 @@
 @import '../../../resources/styles/colors.scss';
 
+.projects-content-container {
+  background-image: url('../../../resources/assets/github-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+}
+
 .project-tile {
   background-color: $nav-blue;
   border-radius: 0.5rem;
@@ -8,3 +19,4 @@
   height: 20rem;
   width: 20rem;
 }
+

@@ -28,7 +28,7 @@ const Projects = () => {
   }, []);
 
   // logging that the data was loaded or updated
-  useEffect(() => console.log("new data to be loaded", gitHubData), [gitHubData]);
+  useEffect(() => console.log("DEBUG. data that was loaded: ", gitHubData), [gitHubData]);
 
   return(
     <section  id='projects-section' className='section'>
