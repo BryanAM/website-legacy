@@ -1,15 +1,18 @@
 @import '../../../resources/styles/colors.scss';
 
-.projects-content-container {
-  background-image: url('../../../resources/assets/github-background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  border-radius: inherit;
-  transition: all .3s ease-in-out;
-  height: 100%;
-  width: 100%;
+.background-image {
+   height: 100%;
+   width: 100%;
+   opacity: 0.2;
+   border-radius: inherit;
+  // 
+}
+
+.project-description {
+  color: $white;
+  margin: 0;
+  position: absolute;
+  top: 0;
 }
 
 .project-tile {
@@ -20,10 +23,32 @@
   height: 20rem;
   width: 20rem;
   overflow: hidden;
-    :hover,
-    :focus {
-      transform: scale(1.25);
-      opacity: 0.1;
+  position: relative;
+  transition: all .3s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: $accent-pink;
+    opacity: 0.9;
+    img {
+      transform: scale(1.1);
     }
+  }
 }
+
+.project-link:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+}
+
+.repo-name { 
+  color: $white;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
 
