@@ -19,6 +19,7 @@
 }
 
 .project-tile {
+  border: solid 1px $accent-pink;
   border-radius: 0.5rem;
   display: inline-block;
   margin: 1rem;
@@ -29,6 +30,7 @@
   transition: all .3s ease-in-out;
   &:hover,
   &:focus {
+    border: solid 1px $white;
     background-color:$accent-pink;
     opacity: 1;
     img {
