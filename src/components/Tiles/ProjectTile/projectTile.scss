@@ -1,22 +1,24 @@
 @import '../../../resources/styles/colors.scss';
+@import '../../../resources/styles/text.scss';
 
 .background-image {
+  left: 0;
+  top: 0;
    height: 100%;
    width: 100%;
-   opacity: 0.2;
+   opacity: 0.1;
    border-radius: inherit;
-  // 
+   position: absolute;
+   z-index: -1;
 }
 
 .project-description {
   color: $white;
-  margin: 0;
-  position: absolute;
-  top: 0;
+  font-size: $medium;
+  font-weight: $bold;
 }
 
 .project-tile {
-  background-color: $nav-blue;
   border-radius: 0.5rem;
   display: inline-block;
   margin: 1rem;
@@ -27,10 +29,14 @@
   transition: all .3s ease-in-out;
   &:hover,
   &:focus {
-    background-color: $accent-pink;
-    opacity: 0.9;
+    background-color:$accent-pink;
+    opacity: 1;
     img {
       transform: scale(1.1);
+    }
+
+    .repo-name, .project-description{
+      color: $background-blue;
     }
   }
 }
@@ -46,9 +52,7 @@
 
 .repo-name { 
   color: $white;
-  margin: 0;
-  position: absolute;
-  top: 0;
+  font-size: $xx-large;
 }
 
 

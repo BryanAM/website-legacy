@@ -7,7 +7,7 @@ query {
           url
         	description
           name
-          repositoryTopics(first: 3){
+          repositoryTopics(first: 5){
             edges{
               node{
                 topic{
