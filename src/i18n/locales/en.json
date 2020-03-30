@@ -62,6 +62,10 @@
     },
     "work": {
       "header": "Places I've worked"
+    },
+    "connect": {
+      "me": "Reach out and connect",
+      "employed": "At the moment I am not looking for new employment opportunities but drop me a message, share some knoweldge, or feel free to say hello. I'm always happy to learn more connect! Thanks"
     }
   }
 }

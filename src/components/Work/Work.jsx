@@ -5,36 +5,37 @@ import './work.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAppleAlt, faCode, faSchool } from '@fortawesome/free-solid-svg-icons';
 import en from '../../i18n/locales/en.json';
+
 const Work = () => {
   const [t] = useTranslation();
-  const [job, setJob ] = useState("EY");
+  const [job, setJob ] = useState('EY');
 
   const icons = {
-    "faAppleAlt": faAppleAlt,
-    "faCode": faCode,
-    "faSchool": faSchool
+    'faAppleAlt': faAppleAlt,
+    'faCode': faCode,
+    'faSchool': faSchool
   }
   const handleOnClick = (e) => {
-    console.log("before set state: ", job)
+    console.log('before set state: ', job)
     setJob(e);
   };
   return(
-    <section id="work-section" className="section">
-　　　　<h2 className="section-header">{t('work.header')}</h2>
+    <section id='work-section' className='section'>
+　　　　<h2 className='section-header'>{t('work.header')}</h2>
       {/* iterate through jobs */}
-      <div className="current-jobs">
+      <div className='current-jobs'>
         {Object.keys(en.en.jobs).map((value, index) => (
-          <WorkTile key={index + "value"} title={value} clickable={handleOnClick}><FontAwesomeIcon icon={icons[t('jobs.' + value + ".icon")]} /></WorkTile>
+          <WorkTile key={index + 'value'} title={value} clickable={handleOnClick}><FontAwesomeIcon icon={icons[t('jobs.' + value + '.icon')]} /></WorkTile>
         ))}
       </div>
       <hr />
       {/* Display job data */}
-      <h2 className="company-name">{job}</h2>
-      <p className="position-title">{t('jobs.' + job + '.title')}</p>
-      <p className="job-dates">{t('jobs.' + job + '.dates')}</p>
-      <p className="job-description">{t('jobs.' + job + '.description')}</p>
+      <h2 className='company-name'>{job}</h2>
+      <p className='position-title'>{t('jobs.' + job + '.title')}</p>
+      <p className='job-dates'>{t('jobs.' + job + '.dates')}</p>
+      <p className='job-description'>{t('jobs.' + job + '.description')}</p>
         {/* Iterate through job points */}
-        <ul className="job-points">
+        <ul className='job-points'>
           {
             t('jobs.' + job + '.points', { returnObjects: true }).map((point)=>(
               <li key={ point + job }>{point}</li>

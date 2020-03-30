@@ -1,0 +1,20 @@
+@import '../../resources/styles/colors.scss';
+@import '../../resources/styles/text.scss';
+ 
+#connect-section {
+  display: flexbox;
+  margin: 2rem;
+  min-height: 70vh;
+}
+
+.connect-employed {
+
+}
+
+.connect-title {
+  color: $white;
+  font-size: $large;
+  margin-top: 0;
+  font-weight: $x-bold;
+  color: $standard-text;
+}
