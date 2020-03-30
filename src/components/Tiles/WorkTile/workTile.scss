@@ -14,9 +14,14 @@
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
+  transition: all .5s ease-in-out;
+  &:hover,
+  &focus {
+    background: $accent-pink;
+  }
 }
 
-.worktile-title{
+.worktile-title {
   margin: 0;
   color: $standard-text;
   top: 0;
