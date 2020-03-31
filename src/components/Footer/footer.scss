@@ -6,4 +6,16 @@
   display: flex;
   flex-direction: row;
   min-height: 15vh;
+  justify-content: center;
+}
+
+.footer-link-icon {
+  align-self: center;
+  color: $white;
+  font-size: $large;
+  margin: 1rem;
+  &hover,
+  &focus {
+    transform: scale(1.1);
+  }
 }
