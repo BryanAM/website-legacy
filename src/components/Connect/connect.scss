@@ -10,7 +10,7 @@
 
 .connect-hi {
   display: inline-block;
-  border: solid $accent-pink;
+  border: solid 1px $accent-pink;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   margin: 0.25rem;
@@ -28,7 +28,7 @@
   transition: all .5s ease-in-out;
   &:hover,
   &focus {
-    background: rgba(230, 103, 167, 0.3)
+    background: rgba(230, 103, 167, 0.3);
   }
 }
 
