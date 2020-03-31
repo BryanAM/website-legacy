@@ -5,6 +5,7 @@ import Welcome from './components/Welcome/Welcome.jsx';
 import Work from './components/Work/Work.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Connect from './components/Connect/Connect.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
 import './resources/styles/globals.scss';
@@ -19,6 +20,7 @@ function App() {
         <Work />
         <Projects />
         <Connect />
+        <Footer />
       </I18nextProvider>
     </div>
   );

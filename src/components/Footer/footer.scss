@@ -1,0 +1,9 @@
+@import '../../resources/styles/colors.scss';
+@import '../../resources/styles/text.scss';
+
+#footer {
+  background-color: $footer-blue;
+  display: flex;
+  flex-direction: row;
+  min-height: 15vh;
+}
