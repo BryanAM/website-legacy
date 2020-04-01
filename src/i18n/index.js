@@ -7,7 +7,7 @@ const options = {
     escapeValue: false,
   },
   caches: ['localStorage', 'cookie'],
-  fallbackLng: 'jp',
+  fallbackLng: 'en',
   debug: true,
 
   resources: {
@@ -15,7 +15,8 @@ const options = {
       common: en.en,
     },
     
-    jp: {
+    // default japanese ISO code = ja
+    ja: {
       common: jp.jp
     }
   },
