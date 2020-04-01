@@ -4,7 +4,7 @@ import './connect.scss';
 const Connect = () => {
   const [t] =useTranslation();
   const handleOnClick = () => {
-    window.location = "mailto:bryaument@gmail.com?subject=I saw your website! I'm saying hi! ";
+    window.location = "mailto:bryaument@gmail.com?subject=I saw your website! I'm saying hi!";
   }
   return(
     <section id='connect-section'>

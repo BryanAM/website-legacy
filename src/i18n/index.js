@@ -1,13 +1,14 @@
 import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import { jp, en } from './locales/index';
 
 const options = {
   interpolation: {
     escapeValue: false,
   },
-
+  caches: ['localStorage', 'cookie'],
+  fallbackLng: 'jp',
   debug: true,
-  lng: 'en',
 
   resources: {
     en: {
@@ -19,7 +20,6 @@ const options = {
     }
   },
 
-  fallbackLng: 'en',
   ns: ['common'],
   defaultNS: 'common',
 
@@ -32,6 +32,7 @@ const options = {
 };
 
 i18n
+  .use(LanguageDetector)
   .init(options)
 
 export default i18n;
