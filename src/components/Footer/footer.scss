@@ -1,10 +1,17 @@
 @import '../../resources/styles/colors.scss';
 @import '../../resources/styles/text.scss';
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #footer {
   background-color: $footer-blue;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 15vh;
   justify-content: center;
 }
@@ -13,9 +20,14 @@
   align-self: center;
   color: $white;
   font-size: $large;
-  margin: 1rem;
+  margin: 0.5rem;
   &hover,
   &focus {
     transform: scale(1.1);
   }
+}
+
+.made-by {
+  color: $standard-text;
+  align-self: center;
 }
