@@ -67,7 +67,9 @@
       "about": "From the foot of Mt. Fuji, to the USA",
       "detail": "I'm a Philadelphia based software engineer. I got my start just outside of Tokyo and transitioned to software engineering. Come learn about my journey!",
       "greeting": "Welcome! My name is",
-      "name": "Bryan Aument."
+      "name": "Bryan Aument.",
+      "switch": "Click Me!",
+      "switchDesc": "Want to checkout my website in Japanese?"
     },
     "work": {
       "header": "Places I've worked"

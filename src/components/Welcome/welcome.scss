@@ -1,6 +1,29 @@
 @import '../../resources/styles/colors.scss';
 @import '../../resources/styles/text.scss';
 
+.language-picker {
+  display: inline-block;
+  border: solid 1px $accent-pink;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0.25rem;
+  min-width: 10rem;
+  height: auto;
+  align-self: center;
+  text-decoration: none;
+  background: $nav-blue;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: $medium;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all .5s ease-in-out;
+  &:hover,
+  &focus {
+    background: rgba(230, 103, 167, 0.3);
+  }
+}
 .me-long {
   color: $white;
   font-size: $medium;
