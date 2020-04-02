@@ -18,7 +18,7 @@ const Welcome = () => {
       <p className='me-name'>{t('welcome.name')}</p>
       <p className='me-short'>{t('welcome.about')}</p>
       <p className='me-long'>{t('welcome.detail')}</p>
-      <p>{t('welcome.switchDesc')}</p>
+      <p className='pick-lang-desc'>{t('welcome.switchDesc')}</p>
       <button className='language-picker' onClick={handleOnClick}>
         {t('welcome.switch')}
       </button>
