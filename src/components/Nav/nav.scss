@@ -20,9 +20,16 @@
 }
 
 nav {
-  max-height: 4rem;
+  min-height: 50px;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
   background-color: $nav-blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.svg-inline--fa {
+  margin: 1rem;
 }

@@ -14,9 +14,10 @@ const Nav = () => {
     }
 
   return (
-    <nav id="nav-section" className="nav">
-      <button className="hamburger" onClick={handleOnClick}><Hamburger open={open}/></button>
+    <nav id='nav-section' className='nav'>
+      <button className='hamburger' onClick={handleOnClick}><Hamburger open={open}/></button>
       <a href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!"><FontAwesomeIcon icon={faEnvelope} /></a>
+
     </nav>
   );
 };
