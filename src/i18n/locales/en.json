@@ -72,10 +72,22 @@
       "switchDesc": "Want to checkout my website in Japanese?"
     },
     "nav": {
-      "about": "About me",
-      "jobs": "Jobs",
-      "projects": "Projects",
-      "contact": "Contact me"
+      "about": {
+        "desc": "About me",
+        "id": "about-section"
+      },
+      "jobs": {
+        "desc": "Jobs",
+        "id": "work-section"
+      },
+      "projects": {
+        "desc": "Projects",
+        "id": "projects-section"
+      },
+      "contact": {
+        "desc": "Contact me",
+        "id": "connect-section"
+      }
     },
     "work": {
       "header": "Places I've worked"
