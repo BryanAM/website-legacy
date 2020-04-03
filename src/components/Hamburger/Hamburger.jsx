@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
 import './hamburger.scss';
 
-const Hamburger = () => {
-  const [open, setOpen] = useState(false);
-
-  const handleOnClick = () => {
-    console.log('clicked!');
-    setOpen(!open);
-    console.log(open);
-    }
+const Hamburger = ({ open }) => {
 
   return(
-    <button id='onTheMenu' className='hamburger-menu' type='button' onClick={handleOnClick}>
+    <div id='onTheMenu' className='hamburger-menu'>
       <div className={`menu-burger ${open ? 'open' : 'closed'}`}></div>
-    </button>
+    </div>
   );
 };
 export default Hamburger;
