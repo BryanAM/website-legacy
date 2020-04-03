@@ -71,6 +71,12 @@
       "switch": "Click Me!",
       "switchDesc": "Want to checkout my website in Japanese?"
     },
+    "nav": {
+      "about": "About me",
+      "jobs": "Jobs",
+      "projects": "Projects",
+      "contact": "Contact me"
+    },
     "work": {
       "header": "Places I've worked"
     }

@@ -4,11 +4,11 @@
 .fa-envelope {
   color: $accent-pink;
   font-size: $large;
-  margin: 2rem;
+  margin-right: 2rem;
 }
 
 .hamburger {
-  margin: 2rem;
+  margin-left: 2rem;
   background: none;
 	color: inherit;
 	border: none;
@@ -19,8 +19,21 @@
 	transition: all 0.5s cubic-bezier(0,1.82,.72,.75);
 }
 
+.menu {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  top: 70px;
+  background: $white;
+  &.open {
+    background: $nav-blue;
+    height: 200px;
+    visibility: visible;
+  }
+}
+
 nav {
-  min-height: 50px;
+  height: 70px;
   min-width: 100%;
   position: absolute;
   top: 0;
@@ -30,6 +43,25 @@ nav {
   justify-content: space-between;
 }
 
+ul {
+ margin-left: 1rem;
+ margin-top: 0;  
+}
+
+hr {
+  max-width: 90%;
+  align: left;
+}
+.nav-list-item {
+  list-style-type: none;
+  padding-top: 0.5rem;
+}
+
+.nav-item {
+  color: $standard-text;
+  text-decoration: none;
+
+}
 .svg-inline--fa {
   margin: 1rem;
 }
