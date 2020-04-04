@@ -27,8 +27,6 @@
   background: $nav-blue;
   &.open {
     background: $nav-blue;
-    //height: 200px;
-    //visibility: visible;
   }
 }
 
@@ -50,7 +48,6 @@ ul {
 
 hr {
   max-width: 90%;
-  align: left;
 }
 .nav-list-item {
   list-style-type: none;

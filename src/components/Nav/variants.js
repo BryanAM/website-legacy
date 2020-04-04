@@ -3,6 +3,7 @@
     open: {
       visibility: 'visible',
       height: 200,
+      zIndex: 1,
       transition: { duration: 1, type: 'spring' }
     },
 
@@ -14,7 +15,7 @@
       }
     },
   }
-
+  
   export const liVariants = {
     open: {
       y: 0,
@@ -42,4 +43,5 @@
       transition: { staggerChildren: 0.05, staggerDirection: -1 }
     }
   }
+
   
