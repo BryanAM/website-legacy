@@ -7,6 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import en from '../../i18n/locales/en.json';
 import jp from '../../i18n/locales/jp.json';
 import { motion } from "framer-motion";
+import { ulVariants, liVariants, navVariant } from './framer.js';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -14,50 +15,6 @@ const Nav = () => {
   const handleOnClick = () => {
     setOpen(!open);
     }
-
-  const navVariant = {
-    open: {
-      visibility: 'visible',
-      height: 200,
-      transition: { duration: 1, type: 'spring' }
-    },
-
-    closed: {
-      height: 0,
-      transition: { duration: 1, type: 'tween', delay: 0.2 },
-      transitionEnd: {
-        visibility: 'hidden'
-      }
-    },
-  }
-
-  const ulVariants = {
-    open: {
-      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-    },
-
-    closed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 }
-    }
-  }
-
-  const liVariants = {
-    open: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stuffness: 1000, velocity: -100 }
-      }
-    },
-
-    closed: {
-      y: 20,
-      opacity: 0,
-      transition: {
-        y: { stuffness: 1000 }
-      }
-    }
-  }
 
   return (
     <motion.nav 
