@@ -78,13 +78,14 @@ const Nav = () => {
               <motion.li
                 variants={ liVariants }
                 whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}key={index + 1}
+                whileTap={{ scale: 0.95 }}
+                key={index + 1}
                 className='nav-list-item'
               > 
-                  <a href={`#${en.en.nav[value].id}`} className='nav-item'>
-                    {(i18n.language === 'en' ? en.en.nav : jp.jp.nav)[value].desc}
-                  </a>
-              <hr  align='left'/>
+                <a href={`#${en.en.nav[value].id}`} className='nav-item'>
+                  {(i18n.language === 'en' ? en.en.nav : jp.jp.nav)[value].desc}
+                </a>
+                <hr  align='left'/>
             </motion.li>
           ))}
           </motion.ul>
