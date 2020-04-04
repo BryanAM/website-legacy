@@ -24,11 +24,11 @@
   visibility: hidden;
   width: 100%;
   top: 70px;
-  background: $white;
+  background: $nav-blue;
   &.open {
     background: $nav-blue;
-    height: 200px;
-    visibility: visible;
+    //height: 200px;
+    //visibility: visible;
   }
 }
 

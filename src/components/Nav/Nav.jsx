@@ -19,13 +19,18 @@ const Nav = () => {
   
   const navVariant = {
     open: {
-
+      visibility: 'visible',
+      height: 200,
+      transition: { duration: 1, type: 'spring' }
     },
 
     closed: {
-
-    }
-
+      height: 0,
+      transition: { duration: 1, type: 'tween', delay: 0.2 },
+      transitionEnd: {
+        visibility: 'hidden'
+      }
+    },
   }
 
   const ulVariants = {
@@ -48,7 +53,7 @@ const Nav = () => {
     },
 
     closed: {
-      y: 50,
+      y: 20,
       opacity: 0,
       transition: {
         y: { stuffness: 1000 }
@@ -69,7 +74,7 @@ const Nav = () => {
         <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!" >
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
-        <motion.div className={`menu ${open ? 'open' : 'closed'}`}>
+        <motion.div  variants={navVariant} className={`menu ${open ? 'open' : 'closed'}`}>
           <motion.ul variants={ulVariants}>
             {Object.keys(en.en.nav).map((value, index) => (
               <motion.li
