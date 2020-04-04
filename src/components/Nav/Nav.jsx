@@ -15,8 +15,6 @@ const Nav = () => {
     setOpen(!open);
     }
 
-
-  
   const navVariant = {
     open: {
       visibility: 'visible',
