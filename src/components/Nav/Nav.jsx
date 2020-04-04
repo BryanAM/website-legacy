@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import en from '../../i18n/locales/en.json';
 import jp from '../../i18n/locales/jp.json';
 import { motion } from "framer-motion";
-import { ulVariants, liVariants, navVariant } from './framer.js';
+import { ulVariants, liVariants, navVariant } from './variants.js';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);

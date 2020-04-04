@@ -18,7 +18,7 @@
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: all .5s ease-in-out;
+  transition: background .5s ease-in-out;
   &:hover,
   &focus {
     background: rgba(230, 103, 167, 0.3);
