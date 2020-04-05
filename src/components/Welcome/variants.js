@@ -7,6 +7,8 @@ export const parent = {
 export const variant = {
   fadeIn: {
     opacity: 1,
-    transition: {duration: 2}
+    transition: {
+      duration: 2
+    }
   }    
 }

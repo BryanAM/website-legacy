@@ -1,10 +1,9 @@
-
   export const navVariant = {
     open: {
       visibility: 'visible',
       height: 200,
       zIndex: 1,
-      transition: { duration: 1, type: 'spring' }
+      transition: { duration: 1, type: 'spring', delay: 0.2 }
     },
 
     closed: {
