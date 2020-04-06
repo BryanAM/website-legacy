@@ -24,11 +24,14 @@ const Projects = () => {
       const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
       setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
     }
-    fetchData(); 
+    fetchData();
   }, []);
 
+
   // logging that the data was loaded or updated
-  useEffect(() => console.log("DEBUG. data that was loaded: ", gitHubData), [gitHubData]);
+  useEffect(() => {
+    console.log("DEBUG. data that was loaded: ", gitHubData);
+  }, [gitHubData]);
 
   return(
     <section  id='projects-section' className='section'>

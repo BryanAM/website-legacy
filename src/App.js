@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import About from './components/About/About.jsx';
 import Nav from './components/Nav/Nav.jsx';
 import Welcome from './components/Welcome/Welcome.jsx';
@@ -8,7 +8,6 @@ import Connect from './components/Connect/Connect.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
-import { motion } from "framer-motion";
 import './resources/styles/globals.scss';
 
 function App() {
