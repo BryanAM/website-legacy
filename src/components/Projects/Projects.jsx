@@ -39,7 +39,6 @@ const Projects = () => {
       { gitHubData.map((data, keyID) => 
         <ProjectTile key={keyID} link={data.node.url} repoName={data.node.name} projectDescription={data.node.description}/>
       )}
-
     </section>
   );
 };
