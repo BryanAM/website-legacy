@@ -1,5 +1,6 @@
 @import '../../../resources/styles/colors.scss';
 @import '../../../resources/styles/text.scss';
+@import '../../../resources/styles/screen.scss';
 
 .background-image {
   left: 0;
@@ -16,15 +17,18 @@
   color: $standard-text;
   font-size: $medium;
   font-weight: $bold;
+  @media screen and (max-width: $break-small) {
+    font-size: $small;
+  }
 }
 
 .project-tile {
   border: solid 1px $accent-pink;
   border-radius: 0.5rem;
   display: inline-block;
-  margin: 1rem;
-  height: 20rem;
-  width: 20rem;
+  margin: 0.5rem;
+  height: 18rem;
+  width: 18rem;
   overflow: hidden;
   position: relative;
   transition: all .3s ease-in-out;
@@ -41,6 +45,10 @@
       color: $background-blue;
     }
   }
+  @media screen and (max-width: $break-small) {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 .project-link:before {
@@ -55,6 +63,9 @@
 .repo-name { 
   color: $white;
   font-size: $xx-large;
+  @media screen and (max-width: $break-small) {
+    font-size: $x-large;
+  }
 }
 
 
