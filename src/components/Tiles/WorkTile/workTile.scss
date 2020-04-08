@@ -1,4 +1,5 @@
 @import '../../../resources/styles/colors.scss';
+@import '../../../resources/styles/screen.scss';
 
 .work-tile {
   min-width: 130px;
@@ -21,6 +22,10 @@
   &focus {
     background: $accent-pink;
     border: solid 1px $white;
+  }
+  @media screen and (max-width: $break-small) {
+    min-height: 105px;
+    min-width: 104px;
   }
 }
 
