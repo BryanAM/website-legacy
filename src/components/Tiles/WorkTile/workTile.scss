@@ -1,6 +1,8 @@
 @import '../../../resources/styles/colors.scss';
 
 .work-tile {
+  min-width: 130px;
+  min-height: 130px;
   display: inline-block;
   border: solid 1px $background-blue;
   border-radius: 0.5rem;
