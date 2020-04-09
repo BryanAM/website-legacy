@@ -22,3 +22,15 @@
   font-size: $small;
 }
 
+
+li {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+  &:before {
+    position: absolute;
+    content: '\25BB';
+    color: $accent-pink;
+    left: 4rem;
+  }
+}
+
