@@ -7,7 +7,7 @@
 }
 
 .company-name {
-  color: $light-text;
+  color: $white;
   font-size: $xx-large;
   margin-bottom: 0;
 }
@@ -17,15 +17,20 @@
   margin: 0;
 }
 
-.job-description, .job-points {
+.job-description {
   color: $light-text;
   font-size: $small;
+  padding: 1rem;
+  background-color: $nav-blue;
+  border: 1px solid $light-text;
+  border-radius: 1rem;
 }
 
 
 li {
   list-style-type: none;
   padding-bottom: 0.5rem;
+  color: $standard-text;
   &:before {
     position: absolute;
     content: '\25BB';
