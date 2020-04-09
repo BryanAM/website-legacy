@@ -63,6 +63,15 @@
     "projects": {
       "header": "A few projects I'm working on"
     },
+    "interests": {
+      "skills": [
+        "JavaScript (ES6+)",
+        "Python (3.7)",
+        "React",
+        "HTML / S(CSS)",
+        "Go"
+      ]
+    },
     "welcome": {
       "about": "From the foot of Mt. Fuji, to the USA",
       "detail": "I'm a Philadelphia based software engineer. I got my start just outside of Tokyo and transitioned to software engineering. Come learn about my journey!",

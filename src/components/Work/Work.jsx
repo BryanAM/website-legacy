@@ -16,7 +16,6 @@ const Work = () => {
     'faSchool': faSchool
   }
   const handleOnClick = (e) => {
-    console.log('before set state: ', job)
     setJob(e);
   };
   return(
