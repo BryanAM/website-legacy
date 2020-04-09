@@ -16,3 +16,19 @@
   font-size: $small;
   padding-top: 4rem;
 }
+
+ul { 
+  //margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+  color: $standard-text;
+  &:before {
+    position: absolute;
+    content: '\25BB';
+    color: $accent-pink;
+    left: 4rem;
+  }
+}

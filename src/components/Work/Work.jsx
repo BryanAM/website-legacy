@@ -37,7 +37,7 @@ const Work = () => {
         <ul className='job-points'>
           {
             t('jobs.' + job + '.points', { returnObjects: true }).map((point)=>(
-              <li key={ point + job }>{point}</li>
+              <li className='job-point' key={ point + job }>{point}</li>
             ))
           }
         </ul>
