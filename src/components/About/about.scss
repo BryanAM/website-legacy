@@ -17,3 +17,15 @@ img {
     box-shadow: 5px 10px 10px #0f1a34;
   }
 }
+
+.skill {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+  color: $standard-text;
+  &:before {
+    position: absolute;
+    content: '\25BB';
+    color: $accent-pink;
+    left: 4rem;
+  }
+}

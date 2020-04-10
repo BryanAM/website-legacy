@@ -13,10 +13,11 @@ const About = () => {
       <p className="about-school">{t('about.school')}</p>
       <p className="about-tech">{t('about.tech')}</p>
       <hr />
+      <p className='about-tech'>{t('about.current')}</p>
       <ul className='skills'>
        {
           t('interests.skills' , { returnObjects: true }).map((skill)=>(
-            <li key={ skill }>{skill}</li>
+            <li className='skill' key={ skill }>{skill}</li>
           ))
         }
       </ul>
