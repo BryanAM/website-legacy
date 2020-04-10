@@ -22,10 +22,14 @@
   }
 }
 
+#projects-section {
+  align-items: center;
+  text-align: center;
+}
+
 .project-tile {
   border: solid 1px $accent-pink;
   border-radius: 0.5rem;
-  display: inline-block;
   margin: 0.5rem;
   height: 18rem;
   width: 18rem;
