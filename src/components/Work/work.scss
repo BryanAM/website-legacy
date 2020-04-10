@@ -1,5 +1,6 @@
 @import '../../resources/styles/text.scss';
 @import '../../resources/styles/colors.scss';
+@import '../../resources/styles/screen.scss';
 
 .current-jobs {
   display: block;
@@ -11,6 +12,9 @@
   color: $white;
   font-size: $xx-large;
   margin-bottom: 0;
+  @media screen and (min-width: $break-large) {
+    font-size: $huge;
+  }
 }
 
 .job-dates, .position-title {
@@ -25,6 +29,9 @@
   background-color: $nav-blue;
   border: 1px solid $light-text;
   border-radius: 1rem;
+  @media screen and (min-width: $break-large) {
+    font-size: $large;
+  }
 }
 
 .job-point {
@@ -38,6 +45,9 @@
     margin-right: 1rem;
     
   }
+  @media screen and (min-width: $break-large) {
+    font-size: $medium;
+  }
 }
 
 .job-points {
@@ -48,4 +58,8 @@
 .job-points, .job-point {
   margin-left: 1rem;
   text-indent: -1.6rem;
+  @media screen and (min-width: $break-large) {
+    margin-left: 1rem;
+    text-indent: -1.9rem;
+  }
 }
