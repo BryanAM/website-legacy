@@ -9,18 +9,24 @@ const About = () => {
   return (
     <section id='about-section' className='section'>
       <h2 className='about-header section-header'>{t('about.header')}</h2>
-      <img className='person-picture' src={me} alt='bryan' />
-        <p className='about-school'>{t('about.school')}</p>
-        <p className='about-tech'>{t('about.tech')}</p>
-      <hr style={{clear: 'left'}}/>
+      <div className='about-top'>
+        <img className='person-picture' src={me} alt='bryan' />
+        <div className='about-me-description'>
+          <p className='about-school'>{t('about.school')}</p>
+          <p className='about-tech'>{t('about.tech')}</p>
+        </div>
+      </div>
+      <hr />
       <p className='about-tech'>{t('about.current')}</p>
-      <ul className='skills'>
-       {
-          t('interests.skills' , { returnObjects: true }).map((skill)=>(
-            <li className='skill' key={ skill }>{skill}</li>
-          ))
-        }
-      </ul>
+      <div className='about-bottom'>
+        <ul className='skills'>
+        {
+            t('interests.skills' , { returnObjects: true }).map((skill)=>(
+              <li className='skill' key={ skill }>{skill}</li>
+            ))
+          }
+        </ul>
+      </div>
     </section>
   );
 };

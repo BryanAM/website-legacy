@@ -2,23 +2,18 @@
 @import './text.scss';
 @import './screen.scss';
 
-.App {
-  min-height: 100vh;
-}
-
 .section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   min-height: 100vh;
   @media screen and (min-width: $break-large) {
     margin: 10rem;
   }
   @media screen and (min-width: $break-huge) {
-    //margin: 20rem;
-    max-width: 50rem;
-    //align-items: center;
+    max-width: 70rem;
   }
 }
 

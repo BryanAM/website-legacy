@@ -2,6 +2,25 @@
 @import '../../resources/styles/text.scss';
 @import '../../resources/styles/screen.scss';
 
+.about-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  @media screen and(min-width: $break-large) {
+    flex-wrap: nowrap;
+  }
+}
+
+.about-me-description {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $break-large) {
+    margin-left: 1rem;
+    max-width: 60%;
+  }
+}
+
 .about-tech, .about-school {
   color: $standard-text;
   font-size: $small;
@@ -21,9 +40,7 @@
     box-shadow: 5px 10px 10px #0f1a34;
   }
   @media screen and (min-width: $break-large) {
-    max-width: 25%;
-    padding-left: 1rem;
-    float: left;
+    width: 19rem;
   }
 }
 
