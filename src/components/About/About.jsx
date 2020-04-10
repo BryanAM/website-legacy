@@ -18,15 +18,13 @@ const About = () => {
       </div>
       <hr />
       <p className='about-tech'>{t('about.current')}</p>
-      <div className='about-bottom'>
-        <ul className='skills'>
-        {
-            t('interests.skills' , { returnObjects: true }).map((skill)=>(
-              <li className='skill' key={ skill }>{skill}</li>
-            ))
-          }
-        </ul>
-      </div>
+      <ul className='skills'>
+      {
+          t('interests.skills' , { returnObjects: true }).map((skill)=>(
+            <li className='skill' key={ skill }>{skill}</li>
+          ))
+        }
+      </ul>
     </section>
   );
 };

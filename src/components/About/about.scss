@@ -44,6 +44,14 @@
   }
 }
 
+.skills {
+  
+  @media screen and (min-width: $break-large) {
+    align-self: center;
+    display: flex;
+  }
+}
+
 .skill {
   list-style-type: none;
   padding-bottom: 0.5rem;
@@ -53,5 +61,14 @@
     content: '\25BB';
     color: $accent-pink;
     left: 4rem;
+  }
+  @media screen and (min-width: $break-large) {
+    margin-left: 1rem;
+    &:before {
+      position: static;
+      content: '\25BB';
+      color: $accent-pink;
+      padding-right: 1rem;
+    }
   }
 }
