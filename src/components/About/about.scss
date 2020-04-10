@@ -1,12 +1,16 @@
 @import '../../resources/styles/colors.scss';
 @import '../../resources/styles/text.scss';
+@import '../../resources/styles/screen.scss';
 
 .about-tech, .about-school {
   color: $standard-text;
   font-size: $small;
+  @media screen and (min-width: $break-large) {
+    font-size: $medium;
+  }
 }
 
-img {
+.person-picture {
   border-radius: 8px;
   max-width: 100%;
   height: auto;
@@ -15,6 +19,11 @@ img {
   &:hover {
     transform: scale(1.03);
     box-shadow: 5px 10px 10px #0f1a34;
+  }
+  @media screen and (min-width: $break-large) {
+    max-width: 25%;
+    padding-left: 1rem;
+    float: left;
   }
 }
 

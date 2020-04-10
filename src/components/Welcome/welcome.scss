@@ -1,5 +1,6 @@
 @import '../../resources/styles/colors.scss';
 @import '../../resources/styles/text.scss';
+@import '../../resources/styles/screen.scss';
 
 .language-picker {
   display: inline-block;
@@ -36,6 +37,9 @@
   margin-top: 0;
   margin-bottom: 0;
   font-weight: $x-bold;
+  @media screen and (min-width: $break-large) {
+    font-size: $xx-large;
+  }
 }
 
 .me-short {
@@ -44,10 +48,16 @@
   margin-top: 0;
   font-weight: $x-bold;
   color: $standard-text;
+  @media screen and (min-width: $break-large) {
+    font-size: $x-large;
+  }
 }
 
 .pick-lang-desc {
   color: $accent-pink;
   font-size: $medium;
+  @media screen and (min-width: $break-large) {
+    font-size: $large;
+  }
 }
 

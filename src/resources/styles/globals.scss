@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import './text.scss';
+@import './screen.scss';
 
 .App {
   min-height: 100vh;
@@ -9,11 +10,17 @@
   display: flexbox;
   margin: 2rem;
   min-height: 100vh;
+  @media screen and (min-width: $break-large) {
+    margin: 10rem;
+  }
 }
 
 .section-header {
   color: $accent-pink;
   font-size: $small;
   padding-top: 4rem;
+  @media screen and (min-width: $break-large) {
+    font-size: $medium;
+  }
 }
 

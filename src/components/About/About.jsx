@@ -7,12 +7,12 @@ const About = () => {
   const [t] = useTranslation();
 
   return (
-    <section id="about-section" className="section">
-      <h2 className="about-header section-header">{t('about.header')}</h2>
-      <img className='person-picture' src={me} alt="bryan" />
-      <p className="about-school">{t('about.school')}</p>
-      <p className="about-tech">{t('about.tech')}</p>
-      <hr />
+    <section id='about-section' className='section'>
+      <h2 className='about-header section-header'>{t('about.header')}</h2>
+      <img className='person-picture' src={me} alt='bryan' />
+        <p className='about-school'>{t('about.school')}</p>
+        <p className='about-tech'>{t('about.tech')}</p>
+      <hr style={{clear: 'left'}}/>
       <p className='about-tech'>{t('about.current')}</p>
       <ul className='skills'>
        {
