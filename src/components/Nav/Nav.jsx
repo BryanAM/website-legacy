@@ -42,7 +42,7 @@ const Nav = () => {
                 <a href={`#${en.en.nav[value].id}`} className='nav-item'>
                   {(i18n.language === 'en' ? en.en.nav : jp.jp.nav)[value].desc}
                 </a>
-                <hr  align='left'/>
+                <hr  className='divide-line' align='left'/>
             </motion.li>
           ))}
           </motion.ul>
