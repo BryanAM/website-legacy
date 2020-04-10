@@ -36,9 +36,11 @@ const Projects = () => {
   return(
     <section  id='projects-section' className='section'>
       <h2 className='section-header'>{t('projects.header')}</h2>
-      { gitHubData.map((data, keyID) => 
-        <ProjectTile key={keyID} link={data.node.url} repoName={data.node.name} projectDescription={data.node.description}/>
-      )}
+      <div className='projects'>
+        { gitHubData.map((data, keyID) => 
+          <ProjectTile key={keyID} link={data.node.url} repoName={data.node.name} projectDescription={data.node.description}/>
+        )}
+      </div>
     </section>
   );
 };
