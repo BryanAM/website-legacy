@@ -2,6 +2,10 @@
 @import '../../resources/styles/text.scss';
 @import '../../resources/styles/screen.scss';
 
+#welcome-section {
+  min-height: 100vh;
+}
+
 .language-picker {
   display: inline-block;
   border: solid 1px $accent-pink;

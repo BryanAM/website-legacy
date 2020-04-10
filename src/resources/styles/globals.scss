@@ -11,9 +11,10 @@
   min-height: 100vh;
   @media screen and (min-width: $break-large) {
     margin: 10rem;
+    min-height: 60vh;
   }
   @media screen and (min-width: $break-huge) {
-    max-width: 70rem;
+    width: 60rem;
   }
 }
 
