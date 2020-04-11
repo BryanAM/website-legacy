@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import i18n from '../../i18n/index.js';
 import Hamburger from '../Hamburger/Hamburger';
-import './nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import en from '../../i18n/locales/en.json';
 import jp from '../../i18n/locales/jp.json';
 import { motion } from "framer-motion";
 import { ulVariants, liVariants, navVariant } from './variants.js';
+import './nav.scss';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-  
+  const [screenWidth, setScreenWidth] = useState(0);
   const handleOnClick = () => {
     setOpen(!open);
-    }
+  }
+
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+    setOpen(screenWidth >= 1024 ? true : false);
+    console.log("changing width", screenWidth);
+  }, [screenWidth]);
 
   return (
+    <>
     <motion.nav 
       id='nav-section'
       className='nav'
@@ -30,7 +37,7 @@ const Nav = () => {
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
         <motion.div  variants={navVariant} className={`menu ${open ? 'open' : 'closed'}`}>
-          <motion.ul variants={ulVariants}>
+          <motion.ul className='nav-menu-ul' variants={ulVariants}>
             {Object.keys(en.en.nav).map((value, index) => (
               <motion.li
                 variants={ liVariants }
@@ -48,6 +55,7 @@ const Nav = () => {
           </motion.ul>
         </motion.div>
     </motion.nav>
+    </>
   );
 };
 

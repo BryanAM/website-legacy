@@ -1,5 +1,6 @@
 @import '../../resources/styles/colors.scss';
 @import '../../resources/styles/text.scss';
+@import '../../resources/styles/screen.scss';
 
 .fa-envelope {
   color: $accent-pink;
@@ -16,7 +17,10 @@
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-	transition: all 0.5s cubic-bezier(0,1.82,.72,.75);
+  transition: all 0.5s cubic-bezier(0,1.82,.72,.75);
+  @media screen and (min-width: $break-large) {
+    display: none;
+  }
 }
 
 .menu {
@@ -27,6 +31,9 @@
   background: $nav-blue;
   &.open {
     background: $nav-blue;
+  }
+  @media screen and (min-width: $break-large) {
+    visibility: visible;
   }
 }
 
@@ -49,15 +56,18 @@ ul {
 .divide-line {
   max-width: 90%;
 }
-.nav-list-item {
-  list-style-type: none;
-  padding-top: 0.5rem;
-}
 
 .nav-item {
   color: $standard-text;
   text-decoration: none;
 }
+
+.nav-list-item {
+  list-style-type: none;
+  padding-top: 0.5rem;
+}
+
+
 .svg-inline--fa {
   margin: 1rem;
 }
