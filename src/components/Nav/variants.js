@@ -43,4 +43,20 @@
     }
   }
 
+  export const svgVariants = {
+     open: {
+      height: 110,
+      transition: {
+        height: { stuffness: 1000, type: 'spring', delay: 0.5}
+      }
+    },
+
+    closed: {
+      height: 0,
+      transition: {
+        height: { stuffness: 1000, delay: 0.2 }
+      }
+    }
+  }
+
   

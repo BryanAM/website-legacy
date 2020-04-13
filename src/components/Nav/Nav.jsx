@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import en from '../../i18n/locales/en.json';
 import jp from '../../i18n/locales/jp.json';
 import { motion } from "framer-motion";
-import { ulVariants, liVariants, navVariant } from './variants.js';
+import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
 
 const Nav = () => {
@@ -37,6 +37,9 @@ const Nav = () => {
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
         <motion.div  variants={navVariant} className={`menu ${open ? 'open' : 'closed'}`}>
+        <motion.svg variants={svgVariants} width="90" height="110">
+          <rect className='rect-nav' x="87" y="0" width="10" height="150"/>
+        </motion.svg>
           <motion.ul className='nav-menu-ul' variants={ulVariants}>
             {Object.keys(en.en.nav).map((value, index) => (
               
