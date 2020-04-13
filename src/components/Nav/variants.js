@@ -26,7 +26,7 @@
       y: 0,
       opacity: 1,
       transition: {
-        y: { stuffness: 1000, velocity: -100 }
+        y: { stuffness: 1000 }
       }
     },
 
@@ -49,7 +49,7 @@
 
   export const ulVariants = {
     desktop: {
-      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+      transition: { staggerChildren: 0.05, delayChildren: 0.2 }
     },
     
     open: {
