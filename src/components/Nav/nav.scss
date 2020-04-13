@@ -29,10 +29,8 @@
   width: 100%;
   top: 70px;
   background: $nav-blue;
-  &.open {
-    background: $nav-blue;
-  }
   @media screen and (min-width: $break-large) {
+    background: unset;
     visibility: visible;
   }
 }
