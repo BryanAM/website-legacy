@@ -12,17 +12,36 @@ import './nav.scss';
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const [mobile, setMobile] = useState(true);
-  const [screenWidth, setScreenWidth] = useState(0);
+  // 0 = mobile, 1 = desktop
+  const [screenBreak, setScreenBreak] = useState(0);
+  const BREAK_POINT = 1024;
   const handleOnClick = () => {
     setOpen(!open);
   }
 
+  // only update on mobile / desktop screen break
   useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    setOpen(screenWidth >= 1024 ? true : false);
-    setMobile( screenWidth >= 1024 ? false : true);
-    console.log("changing width", screenWidth);
-  }, [screenWidth]);
+    const handleResize = () => {
+      let updatedWidth = window.innerWidth;
+      // update to desktop
+      if(screenBreak === 0  && updatedWidth >= BREAK_POINT) {
+        setScreenBreak(1);
+        setMobile(false);
+      // update to mobile
+      } else if (screenBreak === 1 && updatedWidth < BREAK_POINT) {
+        setScreenBreak(0);
+        setMobile(true);
+      }
+     
+    }
+    window.onresize = handleResize;
+  },[screenBreak]);
+
+  useEffect(() => {
+    let screenWidth = window.innerWidth;
+    setScreenBreak(screenWidth < BREAK_POINT ? 0 : 1);
+    setMobile( screenBreak ? false : true);
+  }, [screenBreak]);
 
   return (
     <>
