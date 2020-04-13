@@ -55,20 +55,21 @@ nav {
 .nav-item {
   color: $standard-text;
   text-decoration: none;
+  &:hover {
+    color: $accent-pink;
+    transition: 300ms;
+  }
 }
 
 .nav-list-item {
   list-style-type: none;
   padding-top: 0.5rem;
-  &:before {
-    content: '';
-    height: 0px;
-  }
   &:after {
     content: '';
     width: 0px;
   }
-  &:hover:after {
+  &:hover {
+    &:after {
     @media screen and (min-width: $break-large) {
       width: 100%;
       height: 3px;
@@ -76,6 +77,7 @@ nav {
       background: $standard-text;
       transition: 500ms;
     }
+  }
   }
 }
 

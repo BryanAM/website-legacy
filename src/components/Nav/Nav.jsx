@@ -45,7 +45,7 @@ const Nav = () => {
               
                 <motion.li
                   variants={ liVariants }
-                  whileHover={{ scale: 1 }}
+                  whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.99 }}
                   key={index + 1}
                   className='nav-list-item'
