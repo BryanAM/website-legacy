@@ -39,18 +39,19 @@ const Nav = () => {
         <motion.div  variants={navVariant} className={`menu ${open ? 'open' : 'closed'}`}>
           <motion.ul className='nav-menu-ul' variants={ulVariants}>
             {Object.keys(en.en.nav).map((value, index) => (
-              <motion.li
-                variants={ liVariants }
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                key={index + 1}
-                className='nav-list-item'
-              > 
-                <a href={`#${en.en.nav[value].id}`} className='nav-item'>
-                  {(i18n.language === 'en' ? en.en.nav : jp.jp.nav)[value].desc}
-                </a>
-                <hr  className='divide-line' align='left'/>
-            </motion.li>
+              
+                <motion.li
+                  variants={ liVariants }
+                  whileHover={{ scale: 1 }}
+                  whileTap={{ scale: 0.99 }}
+                  key={index + 1}
+                  className='nav-list-item'
+                > 
+                  <a href={`#${en.en.nav[value].id}`} className='nav-item'>
+                    {(i18n.language === 'en' ? en.en.nav : jp.jp.nav)[value].desc}
+                  </a>
+              </motion.li>
+           
           ))}
           </motion.ul>
         </motion.div>

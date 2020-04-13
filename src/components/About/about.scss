@@ -45,7 +45,8 @@
 }
 
 .skills {
-  
+  margin-left: 1rem;
+  margin-top: 0;  
   @media screen and (min-width: $break-large) {
     align-self: center;
     display: flex;
