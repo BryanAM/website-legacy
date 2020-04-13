@@ -25,8 +25,10 @@ const Nav = () => {
       let updatedWidth = window.innerWidth;
       // update to desktop
       if(screenBreak === 0  && updatedWidth >= BREAK_POINT) {
+        setOpen(false);
         setScreenBreak(1);
         setMobile(false);
+      
       // update to mobile
       } else if (screenBreak === 1 && updatedWidth < BREAK_POINT) {
         setScreenBreak(0);

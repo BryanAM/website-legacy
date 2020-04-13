@@ -31,7 +31,6 @@
   top: 70px;
   background: $nav-blue;
   @media screen and (min-width: $break-large) {
-    background: unset;
     top: 0;
   }
 }
@@ -106,6 +105,7 @@ nav {
   margin-top: 0;
   margin-left: 0rem;
   @media screen and (min-width: $break-large) {
+    transform: translate();
     display: flex;
     align-items: center;
     margin: 0;
