@@ -35,7 +35,7 @@ const Nav = () => {
         <button className='hamburger' onClick={handleOnClick}>
           <Hamburger open={open}/>
         </button>
-        <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!" >
+        <motion.a className='mail-icon' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!" >
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
         <motion.div  variants={navVariant} className={`menu ${mobile ? (open ? 'open': 'closed') : 'desktop'}`}>
