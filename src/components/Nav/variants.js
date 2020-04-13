@@ -1,4 +1,10 @@
   export const navVariant = {
+    desktop: {
+      visibility: 'visible',
+      height: 70,
+      zIndex: 1,
+      transition: { duration: 1, type: 'spring', delay: 0.2 }
+    },
     open: {
       visibility: 'visible',
       height: 200,
@@ -16,6 +22,14 @@
   }
   
   export const liVariants = {
+    desktop: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        y: { stuffness: 1000, velocity: -100 }
+      }
+    },
+
     open: {
       y: 0,
       opacity: 1,
@@ -34,6 +48,10 @@
   }
 
   export const ulVariants = {
+    desktop: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+    },
+    
     open: {
       transition: { staggerChildren: 0.07, delayChildren: 0.2 }
     },

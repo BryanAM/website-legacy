@@ -11,6 +11,7 @@ import './nav.scss';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [mobile, setMobile] = useState(true);
   const [screenWidth, setScreenWidth] = useState(0);
   const handleOnClick = () => {
     setOpen(!open);
@@ -19,6 +20,7 @@ const Nav = () => {
   useEffect(() => {
     setScreenWidth(window.innerWidth);
     setOpen(screenWidth >= 1024 ? true : false);
+    setMobile( screenWidth >= 1024 ? false : true);
     console.log("changing width", screenWidth);
   }, [screenWidth]);
 
@@ -28,7 +30,7 @@ const Nav = () => {
       id='nav-section'
       className='nav'
       initial={false}
-      animate={open ? 'open' : 'closed'}
+      animate={mobile ? (open ? 'open' : 'closed') : 'desktop'}
     >
         <button className='hamburger' onClick={handleOnClick}>
           <Hamburger open={open}/>
@@ -36,7 +38,7 @@ const Nav = () => {
         <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!" >
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
-        <motion.div  variants={navVariant} className={`menu ${open ? 'open' : 'closed'}`}>
+        <motion.div  variants={navVariant} className={`menu ${mobile ? (open ? 'open': 'closed') : 'desktop'}`}>
         <motion.svg variants={svgVariants} width="90" height="110">
           <rect className='rect-nav' x="87" y="0" width="10" height="150"/>
         </motion.svg>
@@ -45,7 +47,7 @@ const Nav = () => {
               
                 <motion.li
                   variants={ liVariants }
-                  whileHover={{ scale: 1.2 }}
+                  whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.99 }}
                   key={index + 1}
                   className='nav-list-item'
