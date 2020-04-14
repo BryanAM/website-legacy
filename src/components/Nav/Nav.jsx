@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import i18n from '../../i18n/index.js';
+import { useTranslation } from 'react-i18next';
 import Hamburger from '../Hamburger/Hamburger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -12,6 +13,7 @@ import './nav.scss';
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const [mobile, setMobile] = useState(true);
+  const [t] = useTranslation();
   // 0 = mobile, 1 = desktop
   const [screenBreak, setScreenBreak] = useState(0);
   const BREAK_POINT = 1024;
@@ -64,21 +66,26 @@ const Nav = () => {
           <rect className='rect-nav' x="87" y="0" width="10" height="150"/>
         </motion.svg>
           <motion.ul className='nav-menu-ul' variants={ulVariants}>
-            {Object.keys(en.en.nav).map((value, index) => (
-              
-                <motion.li
-                  variants={ liVariants }
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.99 }}
-                  key={index + 1}
-                  className='nav-list-item'
-                > 
-                  <a href={`#${en.en.nav[value].id}`} className='nav-item'>
-                    {(i18n.language === 'en' ? en.en.nav : jp.jp.nav)[value].desc}
-                  </a>
-              </motion.li>
-           
-          ))}
+            {
+              t('nav.items' , { returnObjects: true }).map((key, index) => {
+                for(var k in key) {
+                  return(
+                    <motion.li
+                      variants={ liVariants }
+                      whileHover={{ scale: 1.08 }}
+                      whileTap={{ scale: 0.99 }}
+                      key={index + 1}
+                      className='nav-list-item'
+                    > 
+                      <a href={`#${key[k].id}`} className='nav-item'>
+                        {t(`${key[k].desc}`)}
+                      </a>
+                    </motion.li>
+                  )
+                }
+                return null
+              })
+            }
           </motion.ul>
         </motion.div>
     </motion.nav>

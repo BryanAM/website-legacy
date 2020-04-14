@@ -82,26 +82,26 @@
       "switch": "クリックしてね!",
       "switchDesc": "英語のサイトを見ませんか？ここに"
     },
+
     "nav": {
-      "about": {
-        "desc": "私について",
-        "id": "about-section"
-      },
-      "jobs": {
-        "desc": "職歴",
-        "id": "work-section"
-      },
-      "projects": {
-        "desc": "プロジェクト",
-        "id": "projects-section"
-      },
-      "contact": {
-        "desc": "連絡",
-        "id": "connect-section"
-      }
-    },
-    "work": {
-      "header": "働いたことがある企業"
+      "items": [
+        {"about": {
+          "desc": "私について",
+          "id": "about-section"
+        }},
+        {"jobs": {
+          "desc": "職歴",
+          "id": "work-section"
+        }},
+        {"projects": {
+          "desc": "プロジェクト",
+          "id": "projects-section"
+        }},
+        {"contact": {
+          "desc": "連絡",
+          "id": "connect-section"
+        }}
+      ]
     }
   }
 }
