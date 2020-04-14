@@ -30,6 +30,11 @@
   }
 }
 
+.about-tech {
+  color: white;
+  font-weight: $x-bold;
+}
+
 .person-picture {
   border-radius: 8px;
   max-width: 100%;
@@ -41,7 +46,7 @@
     box-shadow: 5px 10px 10px #0f1a34;
   }
   @media screen and (min-width: $break-large) {
-    width: 19rem;
+    width: 25rem;
   }
 }
 
@@ -49,6 +54,7 @@
   margin-left: 1rem;
   margin-top: 0;  
   @media screen and (min-width: $break-large) {
+    font-size: $medium;
     align-self: center;
     display: flex;
   }

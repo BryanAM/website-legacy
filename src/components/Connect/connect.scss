@@ -1,11 +1,15 @@
 @import '../../resources/styles/colors.scss';
 @import '../../resources/styles/text.scss';
+@import '../../resources/styles/screen.scss';
  
 .connect-employed {
   color: $white;
   font-size: $small;
   color: $standard-text;
   margin-bottom: 50px;
+  @media screen and (min-width: $break-large) {
+    font-size: $x-large;
+  }
 }
 
 .connect-hi {
@@ -30,6 +34,7 @@
   &focus {
     background: rgba(230, 103, 167, 0.3);
   }
+  
 }
 
 #connect-section {
@@ -43,4 +48,7 @@
   font-size: $large;
   margin-bottom: 0;
   font-weight: $x-bold;
+  @media screen and (min-width: $break-large) {
+    font-size: $xx-large;
+  }
 }

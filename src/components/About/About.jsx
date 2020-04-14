@@ -13,7 +13,7 @@ const About = () => {
         <img className='person-picture' src={me} alt='bryan' />
         <div className='about-me-description'>
           <p className='about-school'>{t('about.school')}</p>
-          <p className='about-tech'>{t('about.tech')}</p>
+          <p className='about-school'>{t('about.tech')}</p>
         </div>
       </div>
       <hr />

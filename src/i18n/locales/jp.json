@@ -66,11 +66,12 @@
     },
     "interests": {
       "skills": [
-        "JavaScript (ES6+)",
-        "Python (3.7)",
+        "JavaScript",
+        "Python",
         "React",
-        "HTML / S(CSS)",
-        "Go"
+        "HTML",
+        "Go",
+        "S(CSS)"
       ]
     },
     "welcome": {
