@@ -67,6 +67,7 @@ const Nav = () => {
         </motion.svg>
           <motion.ul className='nav-menu-ul' variants={ulVariants}>
             {
+              // return objects allow i18n items to be iterated
               t('nav.items' , { returnObjects: true }).map((key, index) => {
                 for(var k in key) {
                   return(
