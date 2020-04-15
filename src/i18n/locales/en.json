@@ -1,10 +1,10 @@
 {
   "en": {
     "about": {
-      "current": "Here are some technologies I'm using now.",
+      "current": "Here are some technologies I'm using now:",
       "header": "A bit about me",
-      "school": "I started out 6,700 miles across the globe in education. I participated in the Japan Exchange and Teaching program (JET) for 3 years in Yamanashi Prefecture.",
-      "tech": "Before Japan I studied international relations and Japanese at The Pennsylvania State University. After returning from Japan I studied computer science at the Millersville University."
+      "school": "My journey to software started out 6,700 miles across the globe in education. Yamanashi Japan was my home for three years while I taught through the Japan Exchange and Teaching Program (JET). Outside of teaching, I helped out at a local university's English club, started a volunteer orgnization for study abroad events and learned some of the basics to web development.",
+      "tech": " I wanted to expand my skills so I returned from Japan to study computer science. Right now most of my work is centered around front-end web development, but my interests range from machine learning to backend development."
     },
     "connect": {
       "employed": "At the moment I am not looking for new employment opportunities but drop me a message, share some knoweldge, or feel free to say hello. I'm always happy to learn more connect! Thanks",
