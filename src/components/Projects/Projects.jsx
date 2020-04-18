@@ -9,6 +9,7 @@ const Projects = () => {
   const [gitHubData, setGitHubData] = useState([]);
   const [t] = useTranslation();
 
+  // axios
   const axiosGitHubGraphQL = axios.create({
     baseURL: 'https://api.github.com/graphql',
     headers: {
