@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import i18n from '../../i18n/index.js';
 import { useTranslation } from 'react-i18next';
 import Hamburger from '../Hamburger/Hamburger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import en from '../../i18n/locales/en.json';
-import jp from '../../i18n/locales/jp.json';
 import { motion } from "framer-motion";
 import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
