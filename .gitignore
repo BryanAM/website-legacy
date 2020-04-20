@@ -25,4 +25,4 @@ yarn-error.log*
 # env
 .env
 
-__snapshot__
+*/__snapshot__
