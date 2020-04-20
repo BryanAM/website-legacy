@@ -24,4 +24,16 @@ describe('About', () => {
     const elementText = component.find('.company-name').text();
     expect(elementText).toBe('EY');
   });
+
+  it('we should have the ability to change the state on click', () => {
+    const component = mount(
+      <I18nextProvider i18n={i18n}>
+        <Work />
+      </I18nextProvider>
+    );
+    // switching content by clicking on button
+    component.find('button').at(0).simulate('click');
+        const elementText = component.find('.company-name').text();
+    expect(elementText).toBe('Apple');
+  });
 });
