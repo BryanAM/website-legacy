@@ -23,7 +23,7 @@ const About = () => {
           t('interests.skills' , { returnObjects: true }).map((skill)=>(
             <li className='skill' key={ skill }>{skill}</li>
           ))
-        }
+      }
       </ul>
     </section>
   );
