@@ -31,7 +31,7 @@ describe('About', () => {
         <Work />
       </I18nextProvider>
     );
-    // switching content by clicking on button
+    // switching content by clicking on button 
     component.find('button').at(0).simulate('click');
         const elementText = component.find('.company-name').text();
     expect(elementText).toBe('Apple');
