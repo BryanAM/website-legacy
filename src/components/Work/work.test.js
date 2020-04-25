@@ -25,7 +25,7 @@ describe('About', () => {
     expect(elementText).toBe('EY');
   });
 
-  it('we should have the ability to change the state on click', () => {
+  it('we should have the ability to change the state on click to Apple', () => {
     const component = mount(
       <I18nextProvider i18n={i18n}>
         <Work />
@@ -35,5 +35,41 @@ describe('About', () => {
     component.find('button').at(0).simulate('click');
         const elementText = component.find('.company-name').text();
     expect(elementText).toBe('Apple');
+  });
+
+  it('we should have the ability to change the state on click to EY', () => {
+    const component = mount(
+      <I18nextProvider i18n={i18n}>
+        <Work />
+      </I18nextProvider>
+    );
+    // switching content by clicking on button 
+    component.find('button').at(1).simulate('click');
+        const elementText = component.find('.company-name').text();
+    expect(elementText).toBe('EY');
+  });
+
+  it('we should have the ability to change the state on click to NG', () => {
+    const component = mount(
+      <I18nextProvider i18n={i18n}>
+        <Work />
+      </I18nextProvider>
+    );
+    // switching content by clicking on button 
+    component.find('button').at(3).simulate('click');
+        const elementText = component.find('.company-name').text();
+    expect(elementText).toBe('NG');
+  });
+
+  it('we should have the ability to change the state on click to JET', () => {
+    const component = mount(
+      <I18nextProvider i18n={i18n}>
+        <Work />
+      </I18nextProvider>
+    );
+    // switching content by clicking on button 
+    component.find('button').at(2).simulate('click');
+        const elementText = component.find('.company-name').text();
+    expect(elementText).toBe('JET');
   });
 });
