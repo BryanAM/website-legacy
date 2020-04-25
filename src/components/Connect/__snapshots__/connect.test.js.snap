@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connect should render on load correctly 1`] = `
+<section
+  className="section"
+  id="connect-section"
+>
+  <h2
+    className="section-header"
+  >
+    connect.header
+  </h2>
+  <h2
+    className="connect-title"
+  >
+    connect.me
+  </h2>
+  <p
+    className="connect-employed"
+  >
+    connect.employed
+  </p>
+  <button
+    className="connect-hi"
+    onClick={[Function]}
+  >
+    connect.hi
+  </button>
+</section>
+`;
