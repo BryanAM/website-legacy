@@ -27,11 +27,22 @@ If you plan on using - more or less - the same information in your API call, you
 #### React i18next 
 [About i18next](https://react.i18next.com)
 
-This page was also built with internationalization in mind. You'll notice my page has some odd text interpolations for different web components. react-i18next helps abstract out text using different translation files. My translation files are located here: `src/i18n/locales/en.json` or `jp.json` for the Japanese translation file. They configuration falls back on `en.json` so unless you plan on changing your default language, don't delete that file - just update the content. 
+This page was also built with internationalization in mind. You'll notice my page has some odd text interpolations for different web components. react-i18next helps abstract out text using different translation files. My translation files are located here: `src/i18n/locales/en.json` or `jp.json` for the Japanese translation file. The i18next configuration falls back on `en.json` so unless you plan on changing your default language, don't delete that file - just update the content. 
 
 #### Animation with Framer Motion
 
 I experimented with [Framer Motion](https://www.framer.com/api/motion/) a bit to add some spicy :hot_pepper: animations. If you take a look at the `Nav.js` component you'll see some special html descriptors like `<motion.div>`. This is how framer interacts with the DOM. Varients are variables that help define the animations.
 
 ## Built With
+
+* React 16.12.0
+* i18next
+* fontawesome - Used for iconography
+* express
+* axios
+* node sass
+* framer motion
+#### Test
+* jest
+* enzyme
 
