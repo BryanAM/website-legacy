@@ -6,6 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
 import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
+import { Seal } from '../../resources/assets/Seal.svg';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -62,6 +63,7 @@ const Nav = () => {
         <motion.svg variants={svgVariants} width="90" height="110">
           <rect className='rect-nav' x="87" y="0" width="10" height="150"/>
         </motion.svg>
+          <img className='seal' src={Seal} alt='seal'/>
           <motion.ul className='nav-menu-ul' variants={ulVariants}>
             {
               // return objects allow i18n items to be iterated
