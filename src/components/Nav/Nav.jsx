@@ -6,6 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
 import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
+import  Seal  from '../../resources/assets/Seal.svg';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -58,8 +59,10 @@ const Nav = () => {
         <motion.a className='mail-icon' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!" >
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
+        
         <motion.div  variants={navVariant} className={`menu ${mobile ? (open ? 'open': 'closed') : 'desktop'}`}>
-        <motion.svg variants={svgVariants} width="90" height="110">
+        <img className='seal' src={Seal} alt='seal'/>
+        <motion.svg  className={mobile ? '': 'ul-display-line'} variants={svgVariants} width="90" height="110">
           <rect className='rect-nav' x="87" y="0" width="10" height="150"/>
         </motion.svg>
           <motion.ul className='nav-menu-ul' variants={ulVariants}>
