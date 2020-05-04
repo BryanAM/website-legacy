@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './projectTile.scss';
 import gitImage from '../../../resources/assets/github-background.png';
 
