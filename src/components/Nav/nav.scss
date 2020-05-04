@@ -123,3 +123,9 @@ nav {
 .mail-icon {
   z-index: 2;
 }
+
+.seal {
+  width: 70px;
+  height: auto;
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
