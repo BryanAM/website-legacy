@@ -105,7 +105,6 @@ nav {
   margin-top: 0;
   margin-left: 0rem;
   @media screen and (min-width: $break-large) {
-    
     display: flex;
     align-items: center;
     margin: 0;
@@ -127,5 +126,15 @@ nav {
 .seal {
   width: 70px;
   height: auto;
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: none;
+  @media screen and (min-width: $break-large) {
+    display: block;
+  }
 }
+
+.ul-display-line {
+  display: none;
+}
+
