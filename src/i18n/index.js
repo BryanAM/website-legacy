@@ -3,9 +3,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { en, jp, kr } from './locales/index';
 
 const options = {
-  interpolation: {
-    escapeValue: false,
-  },
   caches: ['localStorage', 'cookie'],
   fallbackLng: 'en',
   debug: true,
