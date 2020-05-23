@@ -29,7 +29,7 @@
       },
       "EY": {
         "dates": "08/2019 - Present",
-        "description": "EY Design Studio produces user centered research, development and design solutions. My role consists of mainly front-end software development using modern tech stacks like React, Redux, {JS, HTML, CSS}, 11ty, templating engines and more.",
+        "description": "EY Design Studio produces user centered research, development and design solutions. My role consists of mainly front-end software development using modern tech stacks like React, Redux, {JS, HTML, CSS}, Angular, templating engines and more.",
         "icon": "faCode",
         "points": [
           "Developed and maintined a plethora of React components for a customer playbook, e.g datepicker, tooltips, and loaders.",
@@ -69,7 +69,7 @@
         "JavaScript",
         "Python",
         "React",
-        "HTML",
+        "Angular 9",
         "Go",
         "S(CSS)"
       ]
