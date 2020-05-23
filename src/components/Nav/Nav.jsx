@@ -96,7 +96,7 @@ const Nav = () => {
                       key={index + 1}
                       className='nav-list-item'
                     > 
-                      <a href={`#${key[k].id}`} className='nav-item'>
+                      <a href={`#${key[k].id}`} className='nav-item' onClick={handleOnClick}>
                         {t(`${key[k].desc}`)}
                       </a>
                     </motion.li>
