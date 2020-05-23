@@ -4,7 +4,7 @@ import Hamburger from '../Hamburger/Hamburger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
-import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
+import { buttonVariants, ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
 import  Seal  from '../../resources/assets/Seal.svg';
 import i18n from '../../i18n/index.js';
@@ -107,9 +107,9 @@ const Nav = () => {
             }
           </motion.ul>
           <div className='lang-buttons'>
-          <motion.button className='lang-button' onClick={handleEnglish}>EN</motion.button>
-          <motion.button className='lang-button' onClick={handleJapanese}>JP</motion.button>
-          <motion.button className='lang-button' onClick={handleKorean}>KR</motion.button>
+          <motion.button className='lang-button' onClick={handleEnglish} variants={buttonVariants}>EN</motion.button>
+          <motion.button className='lang-button' onClick={handleJapanese} variants={buttonVariants}>JP</motion.button>
+          <motion.button className='lang-button' onClick={handleKorean} variants={buttonVariants}>KR</motion.button>
           </div>
         </motion.div>
     </motion.nav>

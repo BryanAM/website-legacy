@@ -132,6 +132,9 @@ nav {
   &focus {
     background: rgba(230, 103, 167, 0.3);
   }
+  @media screen and (min-width: $break-large) {
+    opacity: 1;
+  }
 }
 
 .nav-menu-ul {
