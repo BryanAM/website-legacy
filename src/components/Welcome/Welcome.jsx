@@ -7,7 +7,6 @@ import './welcome.scss';
 
 const Welcome = () => {
   const [t] = useTranslation();
-
   const handleOnClick = () => {
     let switchLang = i18n.language === 'ja' ? 'en' : 'ja';
     i18n.changeLanguage(switchLang, (err, t) => {
@@ -26,7 +25,6 @@ const Welcome = () => {
       </motion.button>
     </motion.section>
   );
-
 };
 
 export default Welcome;

@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
 import  Seal  from '../../resources/assets/Seal.svg';
+import i18n from '../../i18n/index.js';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -45,6 +46,24 @@ const Nav = () => {
     setMobile( screenBreak ? false : true);
   }, [screenBreak]);
 
+  const handleEnglish = () => {
+    i18n.changeLanguage('en', (err, t) => {
+      if (err) return console.log('something went wrong loading', err);
+    });
+  }
+  
+  const handleJapanese = () => {
+    i18n.changeLanguage('ja', (err, t) => {
+      if (err) return console.log('something went wrong loading', err);
+    });
+  }
+  
+  const handleKorean = () => {
+    i18n.changeLanguage('kr', (err, t) => {
+      if (err) return console.log('something went wrong loading', err);
+    });
+  }
+
   return (
     <>
     <motion.nav 
@@ -59,7 +78,6 @@ const Nav = () => {
         <motion.a className='mail-icon' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} href="mailto:bryaument@gmail.com?subject=I saw your website, let's connect!" >
           <FontAwesomeIcon icon={faEnvelope} />
         </motion.a>
-        
         <motion.div  variants={navVariant} className={`menu ${mobile ? (open ? 'open': 'closed') : 'desktop'}`}>
         <img className='seal' src={Seal} alt='seal'/>
         <motion.svg  className={mobile ? '': 'ul-display-line'} variants={svgVariants} width="90" height="110">
@@ -88,6 +106,11 @@ const Nav = () => {
               })
             }
           </motion.ul>
+          <div className='lang-buttons'>
+          <motion.button className='lang-button' onClick={handleEnglish}>EN</motion.button>
+          <motion.button className='lang-button' onClick={handleJapanese}>JP</motion.button>
+          <motion.button className='lang-button' onClick={handleKorean}>KR</motion.button>
+          </div>
         </motion.div>
     </motion.nav>
     </>

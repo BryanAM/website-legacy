@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { jp, en } from './locales/index';
+import { en, jp, kr } from './locales/index';
 
 const options = {
   interpolation: {
@@ -18,6 +18,10 @@ const options = {
     // default japanese ISO code = ja
     ja: {
       common: jp.jp
+    },
+
+    kr: {
+      common: kr.kr
     }
   },
 

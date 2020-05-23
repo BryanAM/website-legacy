@@ -101,6 +101,39 @@ nav {
   }
 }
 
+.lang-buttons {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  @media screen and (min-width: $break-large) {
+    flex-direction: row;
+  }
+}
+
+.lang-button {
+  align-self: center;
+  display: inline-block;
+  border: solid 1px $accent-pink;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  min-width: 0.5rem;
+  max-height: 3rem;
+  text-decoration: none;
+  background: $nav-blue;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: $xsmall;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: background .5s ease-in-out;
+  &:hover,
+  &focus {
+    background: rgba(230, 103, 167, 0.3);
+  }
+}
+
 .nav-menu-ul {
   margin-top: 0;
   margin-left: 0rem;
