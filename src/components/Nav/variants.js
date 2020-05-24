@@ -48,19 +48,11 @@
   }
 
   export const buttonVariants = {
-    desktop: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stuffness: 1000 }
-      }
-    },
-
     open: {
       y: 0,
       opacity: 1,
       transition: {
-        y: { stuffness: 1000, velocity: -100 }
+        y: { stuffness: 1000, velocity: -100, delay: 1 }
       }
     },
 

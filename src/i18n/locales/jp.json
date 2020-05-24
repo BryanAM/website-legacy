@@ -102,6 +102,9 @@
           "id": "connect-section"
         }}
       ]
+    },
+    "work": {
+      "header": "職歴"
     }
   }
 }

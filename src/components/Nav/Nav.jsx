@@ -107,9 +107,11 @@ const Nav = () => {
             }
           </motion.ul>
           <div className='lang-buttons'>
-          <motion.button className='lang-button' onClick={handleEnglish} variants={buttonVariants}>EN</motion.button>
-          <motion.button className='lang-button' onClick={handleJapanese} variants={buttonVariants}>JP</motion.button>
-          <motion.button className='lang-button' onClick={handleKorean} variants={buttonVariants}>KR</motion.button>
+          <motion.ul className='nav-menu-ul' variants={ulVariants}>
+            <motion.li className='nav-buttom-item' variants={ liVariants }><motion.button className='lang-button' onClick={handleEnglish}>EN</motion.button></motion.li>
+            <motion.li className='nav-buttom-item' variants={ liVariants }><motion.button className='lang-button' onClick={handleJapanese}>JP</motion.button></motion.li>
+            <motion.li className='nav-buttom-item' variants={ liVariants }><motion.button className='lang-button' onClick={handleKorean}>KR</motion.button></motion.li>
+          </motion.ul>
           </div>
         </motion.div>
     </motion.nav>
