@@ -4,9 +4,9 @@ import { en, jp, kr } from './locales/index';
 
 const options = {
   interpolation: {
-    escapeValue: false,
+    escapeValue: false
   },
-  
+
   caches: ['localStorage', 'cookie'],
   fallbackLng: 'en',
   debug: true,
