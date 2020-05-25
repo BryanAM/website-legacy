@@ -8,7 +8,7 @@ import './welcome.scss';
 const Welcome = () => {
   const [t] = useTranslation();
   const handleOnClick = () => {
-    let switchLang = i18n.language === 'ja' | 'kr' ? 'en' : 'ja';
+    let switchLang = (i18n.language === 'ja' | i18n.language === 'kr') ? 'en' : 'ja';
     i18n.changeLanguage(switchLang, (err, t) => {
       if (err) return console.log('something went wrong loading', err);
     });
