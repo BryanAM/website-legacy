@@ -4,7 +4,7 @@ import Hamburger from '../Hamburger/Hamburger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
-import { buttonVariants, ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
+import { ulVariants, liVariants, navVariant, svgVariants } from './variants.js';
 import './nav.scss';
 import  Seal  from '../../resources/assets/Seal.svg';
 import i18n from '../../i18n/index.js';

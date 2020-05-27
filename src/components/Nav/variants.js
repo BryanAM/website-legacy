@@ -47,24 +47,6 @@
     }
   }
 
-  export const buttonVariants = {
-    open: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stuffness: 1000, velocity: -100, delay: 1 }
-      }
-    },
-
-    closed: {
-      y: 20,
-      opacity: 0,
-      transition: {
-        y: { stuffness: 0 }
-      }
-    }
-  }
-
   export const ulVariants = {
     desktop: {
       transition: { staggerChildren: 0.05, delayChildren: 0.2 }
