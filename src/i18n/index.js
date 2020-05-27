@@ -41,4 +41,7 @@ i18n
   .use(LanguageDetector)
   .init(options)
 
+// set html lang tag on init
+document.documentElement.lang = i18n.language;
+
 export default i18n;

@@ -48,18 +48,21 @@ const Nav = () => {
 
   const handleEnglish = () => {
     i18n.changeLanguage('en', (err, t) => {
+      document.documentElement.lang = 'en';
       if (err) return console.log('something went wrong loading', err);
     });
   }
   
   const handleJapanese = () => {
     i18n.changeLanguage('ja', (err, t) => {
+      document.documentElement.lang = 'ja';
       if (err) return console.log('something went wrong loading', err);
     });
   }
   
   const handleKorean = () => {
     i18n.changeLanguage('kr', (err, t) => {
+      document.documentElement.lang = 'kr';
       if (err) return console.log('something went wrong loading', err);
     });
   }

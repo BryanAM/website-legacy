@@ -10,6 +10,7 @@ const Welcome = () => {
   const handleOnClick = () => {
     let switchLang = (i18n.language === 'ja' | i18n.language === 'kr') ? 'en' : 'ja';
     i18n.changeLanguage(switchLang, (err, t) => {
+      document.documentElement.lang = switchLang;
       if (err) return console.log('something went wrong loading', err);
     });
   }
