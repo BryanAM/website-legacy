@@ -11,6 +11,8 @@
 .projects {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   @media screen and (min-width: $break-large) {
     flex-direction: row;
   }
