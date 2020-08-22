@@ -26,7 +26,7 @@ const Projects = () => {
       setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
     }
     fetchData();
-  }, []);
+  }, [axiosGitHubGraphQL]);
 
 
   // logging that the data was loaded or updated
