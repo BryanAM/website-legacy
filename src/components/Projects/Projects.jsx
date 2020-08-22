@@ -23,7 +23,6 @@ const Projects = () => {
   useEffect(()=> {
     const fetchData = async () => {
       const result = await axiosGitHubGraphQL.post('',{ query: REPO_QUERY });
-      console.log(`api results: ${result}`);
       setGitHubData(prevState => [...result.data.data.user.repositories.edges]);
     }
     fetchData();
