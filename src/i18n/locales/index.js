@@ -1,9 +1,9 @@
 import en from './en.json';
 import jp from './jp.json';
-import kr from './kr.json';
+import ko from './ko.json';
 
 export {
   en,
   jp,
-  kr
+  ko
 }
