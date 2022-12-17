@@ -15,7 +15,7 @@
     "framer-motion": "1.10.3",
     "i18next": "19.1.0",
     "i18next-browser-languagedetector": "4.0.1",
-    "node-sass": "4.13.1",
+    "node-sass": "7.0.0",
     "path": "0.12.7",
     "prop-types": "15.7.2",
     "react": "16.12.0",
